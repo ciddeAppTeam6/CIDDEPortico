@@ -16,7 +16,6 @@ public class CiddeMainActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_cidde_main);
 		
-		
 		// LOGIC HERE for CIDDE GridView
 		GridView gridview = (GridView) findViewById(R.id.gridview);
 	    gridview.setAdapter(new MainImageAdapter(this));
