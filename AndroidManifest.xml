@@ -26,6 +26,10 @@
             android:name="edu.pitt.cidde.portico.CiddeHowToActivity"
             android:label="@string/title_activity_how_to" >
         </activity>
+        <activity
+            android:name="edu.pitt.cidde.portico.ViewPagerActivity"
+            android:label="@string/title_activity_how_to_view_pager" >
+        </activity>        
     </application>
 
 </manifest>

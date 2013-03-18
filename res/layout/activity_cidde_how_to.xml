@@ -7,7 +7,38 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="hello_world" />
+        android:text="(text stub)How To Tutorials" />
 
+    <Button
+        android:id="@+id/btnStub1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:text="(button-stub)How to use this app (NOT CONNECTED)" />
 
+    
+    <Button
+        android:id="@+id/btnStub2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:text="(button-stub)How to set up a projector (CONNECTED)" />
+    
+    <Button
+        android:id="@+id/btnStub3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:text="(button-stub)How to ???? etc... (NOT CONNECTED)" />
+    
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="(final version of this activity will not use buttons)" />
+    
+    
 </LinearLayout>
