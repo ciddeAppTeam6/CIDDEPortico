@@ -1,5 +1,7 @@
 package edu.pitt.cidde.portico;
 
+
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -10,6 +12,7 @@ import android.support.v4.view.ViewPager;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.ViewGroup.LayoutParams;
@@ -37,9 +40,14 @@ import android.widget.TextView;
 
 
 public class ViewPagerActivity  extends FragmentActivity {
-    
+	//int msgFromChildArray[]; // holds OUTGOING data from child activity back to parent
+	int msgFromChildReturnType; // The RETURN type going back to the parent
+						// 1 = normal return to parent (i.e. just return to parent activity)
+						// 2 = return to HOME activity (will require parent to return with another intent)
+						// 3 = exit program  
+						// 4 = ??
    
-   /**
+	/**
     * The {@link android.support.v4.view.PagerAdapter} that will provide
     * fragments for each of the sections. We use a
     * {@link android.support.v4.app.FragmentPagerAdapter} derivative, which
@@ -82,6 +90,30 @@ public class ViewPagerActivity  extends FragmentActivity {
       return true;
    }
 
+   public boolean onOptionsItemSelected(MenuItem item) {
+       switch (item.getItemId()) {
+       case R.id.return_home: // return to HOME SCREEN
+    	   msgFromChildReturnType = 2; 
+    	   // RETURN TO THE MAIN VIEW after (after intent)
+    	   Intent intent=new Intent(); // create intent
+    	   intent.putExtra("intReturnType", msgFromChildReturnType); // lob on the return data 
+    	   setResult(RESULT_OK, intent); 
+    	   finish(); 
+    	   return true;
+       case R.id.search_equipment: // search for equipment
+    	   // [ go search equipment here ]
+    	   return true;
+       case R.id.scan_qr_code: // scan QR code
+    	   // [ go scan qr code here ]
+    	   return true;
+       case R.id.app_help: // get help with app
+    	   // [ go view the help pages ]
+    	   return true;
+       default:
+    	   return super.onOptionsItemSelected(item);
+       }
+   }
+   
    /**
     * A {@link FragmentPagerAdapter} that returns a fragment corresponding to
     * one of the sections/tabs/pages.

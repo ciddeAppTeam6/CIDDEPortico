@@ -1,9 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android" >
     <item
-        android:id="@+id/menu_settings"
+        android:id="@+id/return_home"
         android:orderInCategory="100"
         android:showAsAction="never"
-        android:title="@string/menu_settings"/>
-
+        android:title="Home"/>
+    <item
+        android:id="@+id/search_equipment"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="Search for Equipment"/>
+        <!-- android:icon="@drawable/goto_main_page_icon" -->
+    <item
+        android:id="@+id/scan_qr_code"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="Scan QR code"/>
+        <!-- android:icon="@drawable/goto_main_page_icon" -->        
+    <item
+        android:id="@+id/app_help"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="Help with App"/> 
 </menu>
