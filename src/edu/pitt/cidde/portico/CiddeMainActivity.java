@@ -79,8 +79,16 @@ public class CiddeMainActivity extends Activity {
 	// "I need help" (2)
 	// -------------
 	private void doIntentNeedHelp()	{
-		Toast.makeText(CiddeMainActivity.this,
-			"I Need Help!", Toast.LENGTH_SHORT).show();
+//		Toast.makeText(CiddeMainActivity.this,
+//			"I Need Help!", Toast.LENGTH_SHORT).show();
+		
+		// Start up the new screen
+		Intent howToIntent = new Intent(
+				edu.pitt.cidde.portico.CiddeMainActivity.this,
+				edu.pitt.cidde.portico.CiddeHelpActivity.class);
+
+		startActivity(howToIntent);
+		
 	} // doIntentNeedHelp
 	
 	// Submit bug report (3)
