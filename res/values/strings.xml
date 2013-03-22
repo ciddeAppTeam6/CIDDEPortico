@@ -3,10 +3,11 @@
 
     <string name="app_name">CIDDE Portico</string>
     <string name="title_activity_how_to">How To</string>
-    <string name="title_activity_how_to_view_pager">How To View Pager</string>  
+    <string name="title_activity_how_to_view_pager">How To View Pager</string>
     <string name="hello_world">Hello world!</string>
     <string name="menu_settings">Settings</string>
+    <string name="title_activity_cidde_troubleshoot">CiddeTroubleshootActivity</string>
+    <string name="title_activity_cidde_help">CiddeHelpActivity</string>
+    <string name="title_activity_cidde_submit_bug_report">CiddeSubmitBugReportActivity</string>
 
-    
-    
 </resources>

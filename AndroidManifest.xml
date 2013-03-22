@@ -29,7 +29,19 @@
         <activity
             android:name="edu.pitt.cidde.portico.ViewPagerActivity"
             android:label="@string/title_activity_how_to_view_pager" >
-        </activity>        
+        </activity>
+        <activity
+            android:name="edu.pitt.cidde.portico.CiddeTroubleshootActivity"
+            android:label="@string/title_activity_cidde_troubleshoot" >
+        </activity>
+        <activity
+            android:name="edu.pitt.cidde.portico.CiddeHelpActivity"
+            android:label="@string/title_activity_cidde_help" >
+        </activity>
+        <activity
+            android:name="edu.pitt.cidde.portico.CiddeSubmitBugReportActivity"
+            android:label="@string/title_activity_cidde_submit_bug_report" >
+        </activity>
     </application>
 
 </manifest>
