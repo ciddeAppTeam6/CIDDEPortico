@@ -1,70 +1,45 @@
 package edu.pitt.cidde.portico;
 
-import android.app.Activity;
+import android.app.ListActivity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.Menu;
 import android.view.View;
-import android.widget.Button;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
 
-public class CiddeHowToActivity extends Activity {
-
+public class CiddeHowToActivity extends ListActivity
+{
+	String[] values;
+	
 	@Override
-	protected void onCreate(Bundle savedInstanceState) {
-		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_cidde_how_to);
-		
-		tempSetUpActivity();
-		tempInitActionButtons();
-	}
-
-	@Override
-	public boolean onCreateOptionsMenu(Menu menu) {
-		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.activity_cidde_how_to, menu);
-		return true;
-	}
-
-
-	private void tempSetUpActivity()
+	protected void onCreate(Bundle savedInstanceState) 
 	{
-		// SET THE TEXT OF btnDoHowTo, etc...
-		; // ?
+		super.onCreate(savedInstanceState);
 		
-	} // setUpActivity()
+		//	Set the "button" labels
+		values = new String[] {"How to use this app (NOT CONNECTED)", "How to set up a projector"};
+		
+//		Define the array adapter
+		ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, values);
+		
+//		Assign adapter to list view
+		setListAdapter(adapter);
+	}
 	
-	private void tempInitActionButtons()
-	{ // temporary stub for this activity to activiate the how to pageveewr
-		// Go load up the viewpager
-		((Button) findViewById(R.id.btnStub2)).setOnClickListener(new Button.OnClickListener() {
-				@Override
-				public void onClick(View v) {
-					// LOGIG TO SAVE LOAD HERE (GO OPEN OTEHR ACTIVITY)
-					// open up other view - but COPY DATA
-					// first (should we save this screen?)
-					//Log.d("DEBUG", "LetterGenie.btnSaveLoad");
-
-					// Start up the new screen
-					Intent viewPagerBundle = new Intent(
-							edu.pitt.cidde.portico.CiddeHowToActivity.this,
-							edu.pitt.cidde.portico.ViewPagerActivity.class);
-
-					// Pass in the URL to the xml document to read
-					String xmlDocToRead = "www.cidde.pitt.edu/cidde_app/howtos/12345_HowTo_set_up_a_projector.xml";
-					viewPagerBundle.putExtra("urlOrPath", xmlDocToRead);
-					viewPagerBundle.putExtra("pathType", 1);
-					startActivity(viewPagerBundle); // go start child activity - no result needed
-					//startActivityForResult(viewPagerBundle, 0);  // start child activity, result needed
-							// 0 is the request code (to determine which activity returned, if more than one)
-					//Log.d("DEBUG", "CiddeHowToActivity.tempInitActionButtons");
-				}
-		});
-
+	@Override
+	protected void onListItemClick(ListView l, View v, int position, long id) 
+	{
+		super.onListItemClick(l, v, position, id);
+		String usersChoice = values[position];
 		
+		Intent howToBundle = new Intent(edu.pitt.cidde.portico.CiddeHowToActivity.this, edu.pitt.cidde.portico.ViewPagerActivity.class);
+		String xmlDocToRead = "www.cidde.pitt.edu/cidde_app/howtos/12345_HowTo_set_up_a_projector.xml";
+		howToBundle.putExtra("urlOrPath", xmlDocToRead);
+		howToBundle.putExtra("pathType", position);
 		
-		
-	} // tempInitActionButtons()
-	
-	
+//		howToBundle.putExtra("pathType", position * 100);
+		 
+		startActivity(howToBundle);
+	}
 } // class CiddeHowToActivity
 
