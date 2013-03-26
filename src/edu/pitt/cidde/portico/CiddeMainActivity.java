@@ -2,6 +2,7 @@ package edu.pitt.cidde.portico;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.View;
@@ -16,6 +17,12 @@ public class CiddeMainActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_cidde_main);
+
+		// set the TITLE bar color for screen - wizard of oz testing only
+		setTitleColor(Color.parseColor("#a0a0a0")); /// this sets the TITLE color for the activity
+	    View title = getWindow().findViewById(android.R.id.title);
+        View titleBar = (View) title.getParent();
+        titleBar.setBackgroundColor(Color.parseColor("#202020"));
 		
 		// LOGIC HERE for CIDDE GridView
 		GridView gridview = (GridView) findViewById(R.id.gridview);

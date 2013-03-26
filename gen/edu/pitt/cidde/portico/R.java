@@ -14,14 +14,16 @@ public final class R {
         public static final int equip_rack=0x7f020000;
         public static final int ic_launcher=0x7f020001;
         public static final int laptop_vga_connection=0x7f020002;
-        public static final int main_browse_equip_room_tmp=0x7f020003;
-        public static final int main_how_to_tmp=0x7f020004;
-        public static final int main_i_need_hepl_tmp=0x7f020005;
-        public static final int main_order_from_web_tmp=0x7f020006;
-        public static final int main_scan_qr_code_tmp=0x7f020007;
-        public static final int main_submit_bug_report_tmp=0x7f020008;
-        public static final int vga_cable=0x7f020009;
-        public static final int vga_inputs=0x7f02000a;
+        public static final int link_looking_button_color=0x7f020003;
+        public static final int main_browse_equip_room_tmp=0x7f020004;
+        public static final int main_how_to_tmp=0x7f020005;
+        public static final int main_i_need_hepl_tmp=0x7f020006;
+        public static final int main_order_from_web_tmp=0x7f020007;
+        public static final int main_scan_qr_code_tmp=0x7f020008;
+        public static final int main_submit_bug_report_tmp=0x7f020009;
+        public static final int no_image_big_x=0x7f02000a;
+        public static final int vga_cable=0x7f02000b;
+        public static final int vga_inputs=0x7f02000c;
     }
     public static final class id {
         public static final int app_help=0x7f070027;
