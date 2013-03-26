@@ -1,21 +1,24 @@
 package edu.pitt.cidde.portico;
 
 import android.app.ListActivity;
+import android.content.Intent;
 import android.os.Bundle;
-import android.text.Layout;
 import android.view.Menu;
+import android.view.View;
 import android.widget.ArrayAdapter;
-import android.widget.TextView;
+import android.widget.ListView;
 
 public class CiddeTroubleshootActivity extends ListActivity 
 {
+	String[] values;
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) 
 	{
 		super.onCreate(savedInstanceState);
 		
 		//	Set the "button" labels
-		String[] values = new String[] {"Powerpoint", "etc.."};
+		values = new String[] {"Powerpoint", "etc.."};
 		
 //		Define the array adapter
 		ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, values);
@@ -23,12 +26,15 @@ public class CiddeTroubleshootActivity extends ListActivity
 //		Assign adapter to list view
 		setListAdapter(adapter);
 	}
-
+	
 	@Override
-	public boolean onCreateOptionsMenu(Menu menu) {
-		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.activity_cidde_troubleshoot, menu);
-		return true;
+	protected void onListItemClick(ListView l, View v, int position, long id) 
+	{
+		super.onListItemClick(l, v, position, id);
+		
+		Intent troubleshootBundle = new Intent(edu.pitt.cidde.portico.CiddeTroubleshootActivity.this, edu.pitt.cidde.portico.ViewPagerActivity.class);
+		troubleshootBundle.putExtra("pathType", position/* * 200*/);
+		 
+		startActivity(troubleshootBundle);
 	}
-
 }
