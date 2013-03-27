@@ -52,6 +52,13 @@
             android:name="edu.pitt.cidde.portico.EquipmentInfoActivity"
             android:label="@string/title_activity_equipment_info" >
         </activity>
-	<!-- -->	
+	<!-- -->
+	
+	<!-- Logan's additions -->
+	<activity
+            android:name="edu.pitt.cidde.portico.CiddeBrowseEquipRooms"
+            android:label="@string/title_activity_browse" >
+        </activity>
+	<!-- -->
     </application>
 </manifest>
