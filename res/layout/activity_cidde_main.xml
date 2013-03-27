@@ -2,7 +2,7 @@
     android:orientation="vertical"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:background="#000000" >    
+    android:background="#ffff" >    
     <GridView xmlns:android="http://schemas.android.com/apk/res/android" 
         android:id="@+id/gridview"
         android:layout_width="fill_parent" 
@@ -17,4 +17,3 @@
     <!-- former for gridview:  -->
     <!-- android:numColumns="auto_fit" -->    
 </LinearLayout>
-

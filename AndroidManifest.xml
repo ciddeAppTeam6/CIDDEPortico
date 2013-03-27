@@ -5,8 +5,8 @@
     android:versionName="1.0" >
 
     <uses-sdk
-        android:minSdkVersion="8"
-        android:targetSdkVersion="17" />
+        android:minSdkVersion="10"
+        android:targetSdkVersion="10" />
 
     <application
         android:allowBackup="true"
@@ -42,6 +42,20 @@
             android:name="edu.pitt.cidde.portico.CiddeSubmitBugReportActivity"
             android:label="@string/title_activity_cidde_submit_bug_report" >
         </activity>
+		
+	<!-- Tim's additions -->
+	<activity
+            android:name="edu.pitt.cidde.portico.ClassRoomInfoActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="edu.pitt.cidde.portico.EquipmentInfoActivity"
+            android:label="@string/title_activity_equipment_info" >
+        </activity>
+	<!-- -->	
     </application>
-
 </manifest>

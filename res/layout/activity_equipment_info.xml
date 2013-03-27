@@ -1,0 +1,109 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".EquipmentInfoActivity" >
+
+        <TextView
+            android:id="@+id/equipment_info_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="@string/equipment_info_string"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/projector_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/equipment_info_textview"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="28dp"
+            android:text="@string/equipment_type_string"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/report_problem_equip_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/projector_textview"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="@string/report_problem_equip_string" />
+
+        <Button
+            android:id="@+id/howto_setup_equip_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/report_problem_equip_button"
+            android:layout_centerHorizontal="true"
+            android:text="@string/howto_setup_equip_string" />
+
+        <Button
+            android:id="@+id/order_equip_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/howto_setup_equip_button"
+            android:layout_centerHorizontal="true"
+            android:text="@string/order_equip_string" />
+
+        <TextView
+            android:id="@+id/add_equip_info_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/order_equip_button"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="22dp"
+            android:text="@string/add_equip_info_string"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/equip_info_textview1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/add_equip_info_textview"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:padding="10sp"
+            android:text="@string/proj_info_string1" />
+
+        <TextView
+            android:id="@+id/equip_info_textview2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/equip_info_textview1"
+            android:layout_centerHorizontal="true"
+            android:padding="10sp"
+            android:text="@string/proj_info_string2" />
+
+        <TextView
+            android:id="@+id/equip_info_textview3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/equip_info_textview2"
+            android:layout_centerHorizontal="true"
+            android:padding="10sp"
+            android:text="@string/proj_info_string3" />
+
+        <ImageView
+            android:id="@+id/proj_imageview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/equip_info_textview3"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="22dp"
+            android:contentDescription="@string/proj_image"
+            android:scaleType="fitCenter"
+            android:src="@drawable/projector" />
+    </RelativeLayout>
+
+</ScrollView>

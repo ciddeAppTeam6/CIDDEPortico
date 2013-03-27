@@ -33,7 +33,7 @@ public class CiddeTroubleshootActivity extends ListActivity
 		super.onListItemClick(l, v, position, id);
 		
 		Intent troubleshootBundle = new Intent(edu.pitt.cidde.portico.CiddeTroubleshootActivity.this, edu.pitt.cidde.portico.ViewPagerActivity.class);
-		troubleshootBundle.putExtra("pathType", position/* * 200*/);
+		troubleshootBundle.putExtra("intType", 1050);
 		 
 		startActivity(troubleshootBundle);
 	}

@@ -14,33 +14,57 @@ public final class R {
         public static final int equip_rack=0x7f020000;
         public static final int ic_launcher=0x7f020001;
         public static final int laptop_vga_connection=0x7f020002;
-        public static final int main_browse_equip_room_tmp=0x7f020003;
-        public static final int main_how_to_tmp=0x7f020004;
-        public static final int main_i_need_hepl_tmp=0x7f020005;
-        public static final int main_order_from_web_tmp=0x7f020006;
-        public static final int main_scan_qr_code_tmp=0x7f020007;
-        public static final int main_submit_bug_report_tmp=0x7f020008;
-        public static final int vga_cable=0x7f020009;
-        public static final int vga_inputs=0x7f02000a;
+        public static final int link_looking_button_color=0x7f020003;
+        public static final int main_browse_equip_room_tmp=0x7f020004;
+        public static final int main_how_to_tmp=0x7f020005;
+        public static final int main_i_need_hepl_tmp=0x7f020006;
+        public static final int main_order_from_web_tmp=0x7f020007;
+        public static final int main_scan_qr_code_tmp=0x7f020008;
+        public static final int main_submit_bug_report_tmp=0x7f020009;
+        public static final int no_image_big_x=0x7f02000a;
+        public static final int projector=0x7f02000b;
+        public static final int vga_cable=0x7f02000c;
+        public static final int vga_inputs=0x7f02000d;
+        public static final int yugoslav=0x7f02000e;
     }
     public static final class id {
-        public static final int app_help=0x7f070027;
+        public static final int add_classroom_info_textview=0x7f070026;
+        public static final int add_equip_info_textview=0x7f070031;
+        public static final int app_help=0x7f07003c;
         public static final int btnStub1=0x7f070018;
         public static final int btnStub2=0x7f070019;
         public static final int btnStub3=0x7f07001a;
         public static final int button1=0x7f070000;
         public static final int button2=0x7f07001d;
         public static final int button3=0x7f07001f;
+        public static final int classroom_info_textview=0x7f070022;
+        public static final int classroom_info_textview1=0x7f070027;
+        public static final int classroom_info_textview2=0x7f070028;
+        public static final int classroom_info_textview3=0x7f070029;
         public static final int editText1=0x7f07001c;
         public static final int editText2=0x7f07001e;
+        public static final int equip_info_textview1=0x7f070032;
+        public static final int equip_info_textview2=0x7f070033;
+        public static final int equip_info_textview3=0x7f070034;
+        public static final int equipment_info_textview=0x7f07002c;
         public static final int gridview=0x7f07001b;
-        public static final int menu_settings=0x7f070023;
-        public static final int pager=0x7f070021;
-        public static final int pager_title_strip=0x7f070022;
+        public static final int howto_setup_equip_button=0x7f07002f;
+        public static final int menu_settings=0x7f070038;
+        public static final int order_classroom_button=0x7f070025;
+        public static final int order_equip_button=0x7f070030;
+        public static final int pager=0x7f070036;
+        public static final int pager_title_strip=0x7f070037;
+        public static final int proj_imageview=0x7f070035;
+        public static final int projector_textview=0x7f07002d;
         public static final int prompt=0x7f070020;
-        public static final int return_home=0x7f070024;
-        public static final int scan_qr_code=0x7f070026;
-        public static final int search_equipment=0x7f070025;
+        public static final int report_problem_classroom_button=0x7f070024;
+        public static final int report_problem_equip_button=0x7f07002e;
+        public static final int return_home=0x7f070039;
+        public static final int room_textview=0x7f070023;
+        public static final int scan_qr_code=0x7f07003b;
+        public static final int scrollView1=0x7f07002b;
+        public static final int scrollView2=0x7f070021;
+        public static final int search_equipment=0x7f07003a;
         public static final int tableLayout1=0x7f070001;
         public static final int tableRow1=0x7f070002;
         public static final int tableRow2=0x7f070004;
@@ -64,6 +88,7 @@ public final class R {
         public static final int textView7=0x7f070015;
         public static final int textView8=0x7f070017;
         public static final int textView9=0x7f07000e;
+        public static final int yugoslav_imageview=0x7f07002a;
     }
     public static final class layout {
         public static final int activity_cidde_help=0x7f030000;
@@ -71,26 +96,56 @@ public final class R {
         public static final int activity_cidde_main=0x7f030002;
         public static final int activity_cidde_submit_bug_report=0x7f030003;
         public static final int activity_cidde_troubleshoot=0x7f030004;
-        public static final int activity_view_pager=0x7f030005;
-        public static final int view_pager_background=0x7f030006;
+        public static final int activity_class_room_info=0x7f030005;
+        public static final int activity_equipment_info=0x7f030006;
+        public static final int activity_view_pager=0x7f030007;
+        public static final int view_pager_background=0x7f030008;
     }
     public static final class menu {
-        public static final int activity_cidde_help=0x7f060000;
-        public static final int activity_cidde_how_to=0x7f060001;
-        public static final int activity_cidde_main=0x7f060002;
-        public static final int activity_cidde_submit_bug_report=0x7f060003;
-        public static final int activity_cidde_troubleshoot=0x7f060004;
-        public static final int activity_view_pager=0x7f060005;
+        public static final int activity_cidde_browse_equip_rooms=0x7f060000;
+        public static final int activity_cidde_help=0x7f060001;
+        public static final int activity_cidde_how_to=0x7f060002;
+        public static final int activity_cidde_main=0x7f060003;
+        public static final int activity_cidde_submit_bug_report=0x7f060004;
+        public static final int activity_cidde_troubleshoot=0x7f060005;
+        public static final int activity_equipment_info=0x7f060006;
+        public static final int activity_view_pager=0x7f060007;
     }
     public static final class string {
+        public static final int add_classroom_info_string=0x7f040018;
+        public static final int add_equip_info_string=0x7f04000e;
         public static final int app_name=0x7f040000;
+        public static final int classroom_info_string=0x7f040014;
+        public static final int classroom_type_string=0x7f040015;
+        public static final int equipment_info_string=0x7f040009;
+        public static final int equipment_type_string=0x7f04000a;
         public static final int hello_world=0x7f040003;
+        public static final int howto_setup_equip_string=0x7f04000c;
         public static final int menu_settings=0x7f040004;
+        public static final int order_classroom_string=0x7f040017;
+        public static final int order_equip_string=0x7f04000d;
+        public static final int proj_image=0x7f040012;
+        public static final int proj_info_string1=0x7f04000f;
+        public static final int proj_info_string2=0x7f040010;
+        public static final int proj_info_string3=0x7f040011;
+        public static final int report_problem_classroom_string=0x7f040016;
+        public static final int report_problem_equip_string=0x7f04000b;
         public static final int title_activity_cidde_help=0x7f040006;
         public static final int title_activity_cidde_submit_bug_report=0x7f040007;
         public static final int title_activity_cidde_troubleshoot=0x7f040005;
+        /**  Classroom info screen 
+         */
+        public static final int title_activity_class_room_info=0x7f040013;
+        /**  Tim's additions: 
+ Equipment info screen 
+         */
+        public static final int title_activity_equipment_info=0x7f040008;
         public static final int title_activity_how_to=0x7f040001;
         public static final int title_activity_how_to_view_pager=0x7f040002;
+        public static final int yugoslav_image=0x7f04001c;
+        public static final int yugoslav_info_string1=0x7f040019;
+        public static final int yugoslav_info_string2=0x7f04001a;
+        public static final int yugoslav_info_string3=0x7f04001b;
     }
     public static final class style {
         /** 
