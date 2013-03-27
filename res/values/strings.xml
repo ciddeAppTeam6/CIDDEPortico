@@ -10,9 +10,9 @@
     <string name="title_activity_cidde_help">CiddeHelpActivity</string>
     <string name="title_activity_cidde_submit_bug_report">CiddeSubmitBugReportActivity</string>
 
-	<!-- Tim's additions: -->
-	<!-- Equipment info screen -->
-	<string name="title_activity_equipment_info">EquipmentInfoActivity</string>
+    <!-- Tim's additions: -->
+    <!-- Equipment info screen -->
+    <string name="title_activity_equipment_info">EquipmentInfoActivity</string>
     <string name="equipment_info_string">Equipment Information</string>
     <string name="equipment_type_string">Projector</string>
     <string name="report_problem_equip_string">Report A Problem With This Piece Of Equipment</string>
@@ -24,7 +24,7 @@
     <string name="proj_info_string3">- Other equipment required: Screen, extension cord, VGA cable, laptop</string>
     <string name="proj_image">Picure of a projector</string>
 
-	<!-- Classroom info screen -->
+    <!-- Classroom info screen -->
     <string name="title_activity_class_room_info">ClassRoomInfoActivity</string>
     <string name="classroom_info_string">Classroom Information</string>
     <string name="classroom_type_string">Cathedral 142</string>
@@ -35,6 +35,6 @@
     <string name="yugoslav_info_string2">- Number of Seats: 35</string>
     <string name="yugoslav_info_string3">- Windows? Yes</string>
     <string name="yugoslav_image">Picure of CL 142</string>
-	<!-- -->
+    <!-- -->
 	
 </resources>
