@@ -60,5 +60,9 @@
             android:label="@string/title_activity_browse" >
         </activity>
 	<!-- -->
+	
+	<!-- Eimile -->
+	<activity android:name="CiddeScanQRcodeActivity">
+	</activity>
     </application>
 </manifest>

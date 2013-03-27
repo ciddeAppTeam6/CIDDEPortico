@@ -38,4 +38,7 @@
     <string name="yugoslav_image">Picure of CL 142</string>
     <!-- -->
 	
+	<!-- Eimile's addition -->
+	<string name="qr_code_info">QR code scanner functionality coming soon!</string>
+	<!-- -->
 </resources>
