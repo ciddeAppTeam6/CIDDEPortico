@@ -105,8 +105,10 @@ public class CiddeMainActivity extends Activity {
 	// Submit bug report (3)
 	// -----------------
 	private void doIntentBugReport() {
-		Toast.makeText(CiddeMainActivity.this, "Submit Bug Report!",
-				Toast.LENGTH_SHORT).show();
+		//Toast.makeText(CiddeMainActivity.this, "Submit Bug Report!",
+		//		Toast.LENGTH_SHORT).show();
+		startActivity(new Intent(Intent.ACTION_VIEW,
+			Uri.parse("https://pitt.wufoo.com/forms/cidde-classroom-technology-problem-report-form/")));
 	} // doIntentBugReport
 
 	// How To.... (4)
