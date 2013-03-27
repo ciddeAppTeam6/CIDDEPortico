@@ -19,11 +19,11 @@ public class CiddeMainActivity extends Activity {
 		setContentView(R.layout.activity_cidde_main);
 
 		// set the TITLE bar color for screen - wizard of oz testing only
-		setTitleColor(Color.parseColor("#a0a0a0")); // / this sets the TITLE
+		//setTitleColor(Color.parseColor("#a0a0a0")); // / this sets the TITLE
 													// color for the activity
-		View title = getWindow().findViewById(android.R.id.title);
-		View titleBar = (View) title.getParent();
-		titleBar.setBackgroundColor(Color.parseColor("#202020"));
+		//View title = getWindow().findViewById(android.R.id.title);
+		//View titleBar = (View) title.getParent();
+		//titleBar.setBackgroundColor(Color.parseColor("#202020"));
 		
 		// LOGIC HERE for CIDDE GridView
 		GridView gridview = (GridView) findViewById(R.id.gridview);
@@ -74,16 +74,8 @@ public class CiddeMainActivity extends Activity {
 	// Scan QR code (0)
 	// ------------
 	private void doIntentSCanQR() {
-	//	Toast.makeText(CiddeMainActivity.this, "Scan QR Code",
-	//			Toast.LENGTH_SHORT).show();
-	
-	// Start up the new screen
-				Intent QRIntent = new Intent(
-						edu.pitt.cidde.portico.CiddeMainActivity.this,
-						edu.pitt.cidde.portico.CiddeScanQRcodeActivity.class);
-
-				startActivity(QRIntent);
-	
+		Toast.makeText(CiddeMainActivity.this, "Scan QR Code",
+				Toast.LENGTH_SHORT).show();
 	}
 
 	// Browse equipment (1)
@@ -111,11 +103,8 @@ public class CiddeMainActivity extends Activity {
 	// Submit bug report (3)
 	// -----------------
 	private void doIntentBugReport() {
-		//Toast.makeText(CiddeMainActivity.this, "Submit Bug Report!",
-		//		Toast.LENGTH_SHORT).show();
-				
-		startActivity(new Intent(Intent.ACTION_VIEW,
-			Uri.parse("https://pitt.wufoo.com/forms/cidde-classroom-technology-problem-report-form/")));
+		Toast.makeText(CiddeMainActivity.this, "Submit Bug Report!",
+				Toast.LENGTH_SHORT).show();
 	} // doIntentBugReport
 
 	// How To.... (4)
