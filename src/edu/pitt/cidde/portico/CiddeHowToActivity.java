@@ -17,7 +17,7 @@ public class CiddeHowToActivity extends ListActivity
 		super.onCreate(savedInstanceState);
 		
 		//	Set the "button" labels
-		values = new String[] {"How to use this app", "How to set up a projector"};
+		values = new String[] {"How to use this app", "How to set up a projector", "How to set up a powerpoint"};
 		
 //		Define the array adapter
 		ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, values);
@@ -40,6 +40,11 @@ public class CiddeHowToActivity extends ListActivity
 		if (position==1)
 		{
 			howToBundle.putExtra("intType", 1250);
+			startActivity(howToBundle);
+		}
+		if (position==2)
+		{
+			howToBundle.putExtra("intType", 1252);
 			startActivity(howToBundle);
 		}
 		
