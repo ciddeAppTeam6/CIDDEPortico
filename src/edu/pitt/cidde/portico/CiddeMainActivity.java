@@ -147,8 +147,10 @@ public class CiddeMainActivity extends Activity {
 	// order from web (5)
 	// --------------
 	private void doIntentOrderWeb() {
-		Toast.makeText(CiddeMainActivity.this, "Order From Web..",
-				Toast.LENGTH_SHORT).show();
+		//Toast.makeText(CiddeMainActivity.this, "Order From Web..",
+		//		Toast.LENGTH_SHORT).show();
+		
+		startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.cidde.pitt.edu/-35")));
 	} // doIntentOrderWeb
 
 	// Return from intent results
