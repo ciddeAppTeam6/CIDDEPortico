@@ -74,8 +74,14 @@ public class CiddeMainActivity extends Activity {
 	// Scan QR code (0)
 	// ------------
 	private void doIntentSCanQR() {
-		Toast.makeText(CiddeMainActivity.this, "Scan QR Code",
-				Toast.LENGTH_SHORT).show();
+		//Toast.makeText(CiddeMainActivity.this, "Scan QR Code",
+		//		Toast.LENGTH_SHORT).show();
+		
+		Intent QRIntent = new Intent(
+			edu.pitt.cidde.portico.CiddeMainActivity.this,
+			edu.pitt.cidde.portico.CiddeScanQRcodeActivity.class);
+
+		startActivity(QRIntent);
 	}
 
 	// Browse equipment (1)
