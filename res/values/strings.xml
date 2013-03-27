@@ -9,6 +9,7 @@
     <string name="title_activity_cidde_troubleshoot">CiddeTroubleshootActivity</string>
     <string name="title_activity_cidde_help">CiddeHelpActivity</string>
     <string name="title_activity_cidde_submit_bug_report">CiddeSubmitBugReportActivity</string>
+    <string name="title_activity_browse">Browse Equipment and Rooms</string>
 
     <!-- Tim's additions: -->
     <!-- Equipment info screen -->
