@@ -33,11 +33,11 @@ public class CiddeHowToActivity extends ListActivity
 		String usersChoice = values[position];
 		
 		Intent howToBundle = new Intent(edu.pitt.cidde.portico.CiddeHowToActivity.this, edu.pitt.cidde.portico.ViewPagerActivity.class);
-		String xmlDocToRead = "www.cidde.pitt.edu/cidde_app/howtos/12345_HowTo_set_up_a_projector.xml";
+		/*String xmlDocToRead = "www.cidde.pitt.edu/cidde_app/howtos/12345_HowTo_set_up_a_projector.xml";
 		howToBundle.putExtra("urlOrPath", xmlDocToRead);
-		howToBundle.putExtra("pathType", position);
+		howToBundle.putExtra("pathType", position);*/
 		
-//		howToBundle.putExtra("pathType", position * 100);
+		howToBundle.putExtra("intType", 1150);
 		 
 		startActivity(howToBundle);
 	}

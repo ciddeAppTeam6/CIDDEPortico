@@ -24,7 +24,7 @@ public class CiddeMainActivity extends Activity {
 		View title = getWindow().findViewById(android.R.id.title);
 		View titleBar = (View) title.getParent();
 		titleBar.setBackgroundColor(Color.parseColor("#202020"));
-
+		
 		// LOGIC HERE for CIDDE GridView
 		GridView gridview = (GridView) findViewById(R.id.gridview);
 		gridview.setAdapter(new MainImageAdapter(this));

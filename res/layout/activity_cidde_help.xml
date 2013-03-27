@@ -46,14 +46,14 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="name 1" />
+                android:text="CIDDE Administrative Operations:" />
 
             <TextView
                 android:id="@+id/textView10"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="(###) ###-####" />
+                android:text="(412) 624-3335" />
         </TableRow>
 
         <TableRow
@@ -67,14 +67,14 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="name 2" />
+                android:text="Classroom Services:" />
 
             <TextView
                 android:id="@+id/textView11"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="(###) ###-####" />
+                android:text="(412) 648-7240" />
         </TableRow>
 
         <TableRow
@@ -148,9 +148,10 @@
 
             <TextView
                 android:id="@+id/textView6"
+                android:autoLink="web"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="link 1" />
+                android:text="http://www.cidde.pitt.edu/" />
 
         </TableRow>
 

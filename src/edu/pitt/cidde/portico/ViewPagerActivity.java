@@ -124,9 +124,7 @@ public class ViewPagerActivity extends FragmentActivity {
 		setTitle("How to connec a PC to the Projector");
 	    View title = getWindow().findViewById(android.R.id.title);
         View titleBar = (View) title.getParent();
-        titleBar.setBackgroundColor(Color.parseColor("#202020"));
-		
-				
+        titleBar.setBackgroundColor(Color.parseColor("#202020"));			
 				
 		// Load up the intent data passed in from the parent activity
 		parentIntentViewType = getIntent().getIntExtra("intViewType", 0); // formerly intLetterData
