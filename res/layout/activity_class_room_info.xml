@@ -1,0 +1,102 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".ClassRoomInfoActivity" >
+
+        <TextView
+            android:id="@+id/classroom_info_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="@string/classroom_info_string"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/room_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/classroom_info_textview"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="28dp"
+            android:text="@string/classroom_type_string"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/report_problem_classroom_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/room_textview"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="@string/report_problem_classroom_string" />
+
+        <Button
+            android:id="@+id/order_classroom_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/report_problem_classroom_button"
+            android:layout_centerHorizontal="true"
+            android:text="@string/order_classroom_string" />
+
+        <TextView
+            android:id="@+id/add_classroom_info_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/order_classroom_button"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="22dp"
+            android:text="@string/add_classroom_info_string"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/classroom_info_textview1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/add_classroom_info_textview"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:padding="10sp"
+            android:text="@string/yugoslav_info_string1" />
+
+        <TextView
+            android:id="@+id/classroom_info_textview2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/classroom_info_textview1"
+            android:layout_centerHorizontal="true"
+            android:padding="10sp"
+            android:text="@string/yugoslav_info_string2" />
+
+        <TextView
+            android:id="@+id/classroom_info_textview3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/classroom_info_textview2"
+            android:layout_centerHorizontal="true"
+            android:padding="10sp"
+            android:text="@string/yugoslav_info_string3" />
+
+        <ImageView
+            android:id="@+id/yugoslav_imageview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/classroom_info_textview3"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="22dp"
+            android:contentDescription="@string/yugoslav_image"
+            android:scaleType="fitCenter"
+            android:src="@drawable/yugoslav" />
+
+    </RelativeLayout>
+
+</ScrollView>
