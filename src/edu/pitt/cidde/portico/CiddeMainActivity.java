@@ -81,8 +81,10 @@ public class CiddeMainActivity extends Activity {
 	// Browse equipment (1)
 	// ----------------
 	private void doIntentBrwsEquipRoom() {
-		Toast.makeText(CiddeMainActivity.this, "Browse Equipment & Rooms",
-				Toast.LENGTH_SHORT).show();
+	//	Toast.makeText(CiddeMainActivity.this, "Browse Equipment & Rooms",
+	//			Toast.LENGTH_SHORT).show();
+				
+		startActivity(new Intent(this, CiddeBrowseEquipRooms.class));
 	} // doIntentBrwsEquipRoom
 
 	// "I need help" (2)
