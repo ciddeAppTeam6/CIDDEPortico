@@ -1,4 +1,4 @@
-package pitt.cs1635.tdo7.officialapp;
+package edu.pitt.cidde.portico;
 
 import android.net.Uri;
 import android.os.Bundle;
