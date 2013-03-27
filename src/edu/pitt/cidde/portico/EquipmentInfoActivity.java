@@ -36,12 +36,14 @@ public class EquipmentInfoActivity extends Activity {
 
 		// How To Button
 		howto_setup_equip_button = (Button) findViewById(R.id.howto_setup_equip_button);
-		// howto_setup_equip_button.setOnClickListener(new OnClickListener() {
-		// @Override
-		// public void onClick(View v) {
-		// startActivity(new Intent(this, CiddeHowToActivity.class));
-		// } // end of listener method
-		// }); // end of anon listener class
+		howto_setup_equip_button.setOnClickListener(new OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				Intent equipHowTo = new Intent(EquipmentInfoActivity.this, ViewPagerActivity.class);
+				equipHowTo.putExtra("intType", 1250);
+				startActivity(equipHowTo);
+			} // end of listener method
+		}); // end of anon listener class
 
 		// Order Button
 		order_equip_button = (Button) findViewById(R.id.order_equip_button);
