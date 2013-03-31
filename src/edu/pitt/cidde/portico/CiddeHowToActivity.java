@@ -17,13 +17,10 @@ public class CiddeHowToActivity extends ListActivity
 		super.onCreate(savedInstanceState);
 		
 		//	Set the "button" labels
-		values = new String[] {"How to use this app (NOT CONNECTED)", "How to set up a projector"};
+		values = getResources().getStringArray(R.array.how_to_options);
 		
 //		Define the array adapter
-		ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, values);
-		
-//		Assign adapter to list view
-		setListAdapter(adapter);
+		this.setListAdapter(new ArrayAdapter<String>(this, R.layout.list_row, R.id.label, values));
 	}
 	
 	@Override
@@ -33,13 +30,18 @@ public class CiddeHowToActivity extends ListActivity
 		String usersChoice = values[position];
 		
 		Intent howToBundle = new Intent(edu.pitt.cidde.portico.CiddeHowToActivity.this, edu.pitt.cidde.portico.ViewPagerActivity.class);
-		/*String xmlDocToRead = "www.cidde.pitt.edu/cidde_app/howtos/12345_HowTo_set_up_a_projector.xml";
-		howToBundle.putExtra("urlOrPath", xmlDocToRead);
-		howToBundle.putExtra("pathType", position);*/
 		
-		howToBundle.putExtra("intType", 1150);
-		 
-		startActivity(howToBundle);
+		if (position==1)
+		{
+			howToBundle.putExtra("intType", 1250);
+			startActivity(howToBundle);
+		}
+		
+		if (position==2)
+		{
+			howToBundle.putExtra("intType", 1252);
+			startActivity(howToBundle);
+		}
 	}
 } // class CiddeHowToActivity
 

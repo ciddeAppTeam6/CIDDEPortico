@@ -13,12 +13,12 @@
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
+        
         <activity
             android:name="edu.pitt.cidde.portico.CiddeMainActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -30,6 +30,8 @@
             android:name="edu.pitt.cidde.portico.ViewPagerActivity"
             android:label="@string/title_activity_how_to_view_pager" >
         </activity>
+        
+        <!-- David's additions -->
         <activity
             android:name="edu.pitt.cidde.portico.CiddeTroubleshootActivity"
             android:label="@string/title_activity_cidde_troubleshoot" >
@@ -42,20 +44,28 @@
             android:name="edu.pitt.cidde.portico.CiddeSubmitBugReportActivity"
             android:label="@string/title_activity_cidde_submit_bug_report" >
         </activity>
+        <!-- -->
 		
-	<!-- Tim's additions -->
-	<activity
-            android:name="edu.pitt.cidde.portico.ClassRoomInfoActivity"
-            android:label="@string/app_name" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name="edu.pitt.cidde.portico.EquipmentInfoActivity"
-            android:label="@string/title_activity_equipment_info" >
-        </activity>
-	<!-- -->	
+		<!-- Tim's additions -->
+		<activity
+	            android:name="edu.pitt.cidde.portico.ClassRoomInfoActivity"
+	            android:label="@string/title_activity_class_room_info" >
+	        </activity>
+	        <activity
+	            android:name="edu.pitt.cidde.portico.EquipmentInfoActivity"
+	            android:label="@string/title_activity_equipment_info" >
+	        </activity>
+		<!-- -->
+		
+		<!-- Logan's additions -->
+		<activity
+	            android:name="edu.pitt.cidde.portico.CiddeBrowseEquipRooms"
+	            android:label="@string/title_activity_browse" >
+	        </activity>
+		<!-- -->
+		
+		<!-- Eimile -->
+		<activity android:name="CiddeScanQRcodeActivity">
+		</activity>
     </application>
 </manifest>

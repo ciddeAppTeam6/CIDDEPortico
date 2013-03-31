@@ -3,6 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="top"
+    android:background="#071c71"
     tools:context=".CiddeSubmitBugReportActivity" >
 
     <EditText
@@ -15,7 +16,10 @@
         android:ems="10"
         android:gravity="top|left"
         android:hint="(Enter text here)"
-        android:inputType="textPostalAddress" >
+        android:inputType="textPostalAddress"
+        android:textColor="#ffd573"
+        android:textColorHint="#ffd573"
+        android:textColorLink="#ffd573" >
 
         <requestFocus />
     </EditText>
@@ -26,7 +30,9 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:text="Submit Problem (not linked)" />
+        android:background="#ffd573"
+        android:text="Submit Problem (not linked)"
+        android:textColor="#021049" />
 
     <Button
         android:id="@+id/button2"
@@ -35,6 +41,8 @@
         android:layout_alignBottom="@+id/editText2"
         android:layout_alignParentRight="true"
         android:layout_alignTop="@+id/editText2"
+        android:background="#ffd573"
+        android:textColor="#021049"
         android:text="Search" />
 
     <Button
@@ -43,6 +51,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
+        android:background="#ffd573"
+        android:textColor="#021049"
         android:text="Scan QR Code" />
 
     <TextView
@@ -52,7 +62,8 @@
         android:layout_alignParentLeft="true"
         android:layout_below="@+id/button3"
         android:layout_marginTop="20dp"
-        android:text="Search for item" />
+        android:text="Search for item"
+        android:textColor="#ffd573" />
 
     <EditText
         android:id="@+id/editText2"
@@ -63,7 +74,10 @@
         android:layout_marginTop="20dp"
         android:layout_toLeftOf="@+id/button2"
         android:ems="10"
-        android:hint="Enter search term(s)" />
+        android:hint="Enter search term(s)"
+        android:textColor="#ffd573"
+        android:textColorHint="#ffd573"
+        android:textColorLink="#ffd573" />
 
     <TextView
         android:id="@+id/textView2"
@@ -72,7 +86,8 @@
         android:layout_alignParentLeft="true"
         android:layout_below="@+id/editText2"
         android:layout_marginTop="20dp"
-        android:text="Item: XXXXXXXXXXXX" />
+        android:text="Item: XXXXXXXXXXXX"
+        android:textColor="#ffd573" />
 
     <TextView
         android:id="@+id/textView1"
@@ -81,6 +96,7 @@
         android:layout_alignParentLeft="true"
         android:layout_below="@+id/textView2"
         android:layout_marginTop="20dp"
-        android:text="Enter Problem Description" />
+        android:text="Enter Problem Description"
+        android:textColor="#ffd573" />
 
 </RelativeLayout>
