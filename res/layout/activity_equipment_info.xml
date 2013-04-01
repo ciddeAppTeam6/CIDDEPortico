@@ -2,7 +2,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/scrollView1"
     android:layout_width="wrap_content"
-    android:layout_height="wrap_content" >
+    android:layout_height="wrap_content"
+    android:background="#071c71" >
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -15,20 +16,24 @@
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
+            android:paddingLeft="5dp"
             android:text="@string/equipment_info_string"
-            android:textSize="24sp" />
+            android:textColor="#ffd573"
+            android:textSize="24sp"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/projector_textview"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
             android:layout_below="@+id/equipment_info_textview"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="28dp"
+            android:padding="10dp"
             android:text="@string/equipment_type_string"
             android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#ffd573"
             android:textSize="18sp"
-            android:textStyle="bold" />
+            android:textStyle="italic" />
 
         <Button
             android:id="@+id/report_problem_equip_button"
@@ -36,8 +41,10 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/projector_textview"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="20dp"
-            android:text="@string/report_problem_equip_string" />
+            android:background="#ffd573"
+            android:padding="5dp"
+            android:text="@string/report_problem_equip_string"
+            android:textColor="#021049" />
 
         <Button
             android:id="@+id/howto_setup_equip_button"
@@ -45,7 +52,11 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/report_problem_equip_button"
             android:layout_centerHorizontal="true"
-            android:text="@string/howto_setup_equip_string" />
+            android:layout_marginTop="10dp"
+            android:background="#ffd573"
+            android:padding="5dp"
+            android:text="@string/howto_setup_equip_string"
+            android:textColor="#021049" />
 
         <Button
             android:id="@+id/order_equip_button"
@@ -53,54 +64,60 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/howto_setup_equip_button"
             android:layout_centerHorizontal="true"
-            android:text="@string/order_equip_string" />
+            android:layout_marginTop="10dp"
+            android:background="#ffd573"
+            android:padding="5dp"
+            android:text="@string/order_equip_string"
+            android:textColor="#021049" />
 
         <TextView
             android:id="@+id/add_equip_info_textview"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
             android:layout_below="@+id/order_equip_button"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="22dp"
+            android:padding="10dp"
             android:text="@string/add_equip_info_string"
+            android:textColor="#ffd573"
             android:textSize="18sp"
-            android:textStyle="bold" />
+            android:textStyle="italic" />
 
         <TextView
             android:id="@+id/equip_info_textview1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
             android:layout_below="@+id/add_equip_info_textview"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="20dp"
             android:padding="10sp"
-            android:text="@string/proj_info_string1" />
+            android:text="@string/proj_info_string1"
+            android:textColor="#ffd573" />
 
         <TextView
             android:id="@+id/equip_info_textview2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
             android:layout_below="@+id/equip_info_textview1"
-            android:layout_centerHorizontal="true"
             android:padding="10sp"
-            android:text="@string/proj_info_string2" />
+            android:text="@string/proj_info_string2"
+            android:textColor="#ffd573" />
 
         <TextView
             android:id="@+id/equip_info_textview3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
             android:layout_below="@+id/equip_info_textview2"
-            android:layout_centerHorizontal="true"
             android:padding="10sp"
-            android:text="@string/proj_info_string3" />
+            android:text="@string/proj_info_string3"
+            android:textColor="#ffd573" />
 
         <ImageView
             android:id="@+id/proj_imageview"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
             android:layout_below="@+id/equip_info_textview3"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="22dp"
             android:contentDescription="@string/proj_image"
             android:scaleType="fitCenter"
             android:src="@drawable/projector" />
