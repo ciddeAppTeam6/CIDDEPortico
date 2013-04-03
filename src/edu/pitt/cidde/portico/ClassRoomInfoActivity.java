@@ -49,7 +49,7 @@ public class ClassRoomInfoActivity extends Activity {
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.activity_cidde_browse_equip_rooms,
+		getMenuInflater().inflate(R.menu.activity_cidde_main,
 				menu);
 		return true;
 	}

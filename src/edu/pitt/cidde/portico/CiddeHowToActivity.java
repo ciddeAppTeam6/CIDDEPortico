@@ -3,11 +3,13 @@ package edu.pitt.cidde.portico;
 import android.app.ListActivity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 public class CiddeHowToActivity extends ListActivity {
+	
 	String[] values;
 
 	@Override
@@ -40,6 +42,14 @@ public class CiddeHowToActivity extends ListActivity {
 			howToBundle.putExtra("intType", 1252);
 			startActivity(howToBundle);
 		}
+	}
+	
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu) {
+		// Inflate the menu; this adds items to the action bar if it is present.
+		getMenuInflater()
+				.inflate(R.menu.activity_cidde_main, menu);
+		return true;
 	}
 } // class CiddeHowToActivity
 

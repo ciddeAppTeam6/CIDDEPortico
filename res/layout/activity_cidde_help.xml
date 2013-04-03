@@ -1,180 +1,168 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:gravity="top"
-    tools:context=".CiddeHelpActivity" >
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    tools:ignore="HardcodedText" >
 
-    <Button
-        android:id="@+id/button1"
-        android:layout_width="wrap_content"
+    <TextView
+        style="?textTitle"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:onClick="troubleshoot"
-        android:text="Let&apos;s Troubleshoot" />
+        android:text="@string/contact_string" />
 
-    <TableLayout
-        android:id="@+id/tableLayout1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" >
+    <ScrollView
+        style="?pageBackground"
+        android:layout_width="fill_parent"
+        android:layout_height="0px"
+        android:layout_weight="1" >
 
-        <TableRow
-            android:id="@+id/tableRow1"
-            android:layout_width="wrap_content"
-            android:layout_height="0dp"
-            android:layout_weight="1" >
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
 
             <TextView
-                android:id="@+id/textView1"
-                android:layout_width="0dp"
+                style="?textSubheader"
+                android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Phone Numbers:" />
-        </TableRow>
+                android:text="Address" />
 
-        <TableRow
-            android:id="@+id/tableRow2"
-            android:layout_width="wrap_content"
-            android:layout_height="0dp"
-            android:layout_weight="1" >
+            <LinearLayout
+                style="?whiteBackground"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    style="?textRegular"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Alumni Hall, Suite B10"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    style="?textRegular"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="4227 Fifth Avenue" />
+
+                <TextView
+                    style="?textRegular"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Pittsburgh, PA 15260" />
+            </LinearLayout>
 
             <TextView
-                android:id="@+id/textView2"
-                android:layout_width="0dp"
+                style="?textSubheader"
+                android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="CIDDE Administrative Operations:" />
+                android:text="Hours" />
+
+            <LinearLayout
+                style="?whiteBackground"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    style="?textRegular"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="8:30am - 8:30pm Monday thru Thursday"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    style="?textRegular"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="8:30am - 5:00pm Friday" />
+            </LinearLayout>
 
             <TextView
-                android:id="@+id/textView10"
-                android:layout_width="0dp"
+                style="?textSubheader"
+                android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="(412) 624-3335" />
-        </TableRow>
+                android:text="Phone Numbers"
+                tools:ignore="HardcodedText" />
 
-        <TableRow
-            android:id="@+id/tableRow3"
-            android:layout_width="wrap_content"
-            android:layout_height="0dp"
-            android:layout_weight="1" >
+            <!-- You cannot have a ListView inside of a ScrollView. This LinearLayout acts like one. -->
+
+            <LinearLayout
+                style="?whiteBackground"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <Button
+                    android:id="@+id/order_classroom_button"
+                    style="?listItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="412-648-7240" />
+
+                <View
+                    style="?listDivider"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1sp" />
+
+                <Button
+                    android:id="@+id/report_problem_classroom_button"
+                    style="?listItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="Fax: 412-648-8812" />
+            </LinearLayout>
 
             <TextView
-                android:id="@+id/textView3"
-                android:layout_width="0dp"
+                style="?textSubheader"
+                android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Classroom Services:" />
+                android:text="Email" />
+
+            <LinearLayout
+                style="?whiteBackground"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    style="?textRegular"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Personal emails?" />
+            </LinearLayout>
 
             <TextView
-                android:id="@+id/textView11"
-                android:layout_width="0dp"
+                style="?textSubheader"
+                android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="(412) 648-7240" />
-        </TableRow>
+                android:text="Web" />
 
-        <TableRow
-            android:id="@+id/tableRow4"
-            android:layout_width="wrap_content"
-            android:layout_height="0dp"
-            android:layout_weight="1" >
-
-            <TextView
-                android:id="@+id/textView4"
-                android:layout_width="0dp"
+            <LinearLayout
+                style="?whiteBackground"
+                android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="name 3" />
+                android:orientation="vertical" >
 
-            <TextView
-                android:id="@+id/textView12"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="(###) ###-####" />
-        </TableRow>
+                <TextView
+                    style="?textRegular"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="www.cidde.pitt.edu/classroom-services" />
 
-        <TableRow
-            android:id="@+id/tableRow9"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1" >
+                <TextView
+                    style="?textRegular"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="http://www.cidde.pitt.edu/" />
+            </LinearLayout>
+        </LinearLayout>
 
-            <TextView
-                android:id="@+id/textView9"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="name 4" />
+    </ScrollView>
 
-            <TextView
-                android:id="@+id/textView13"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="(###) ###-####" />
-        </TableRow>
-    </TableLayout>
-
-    <TableLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/tableLayout1"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="76dp" >
-
-        <TableRow
-            android:id="@+id/tableRow5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" >
-
-            <TextView
-                android:id="@+id/textView5"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Useful Links:" />
-        </TableRow>
-
-        <TableRow
-            android:id="@+id/tableRow6"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" >
-
-            <TextView
-                android:id="@+id/textView6"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:autoLink="web"
-                android:text="http://www.cidde.pitt.edu/" />
-        </TableRow>
-
-        <TableRow
-            android:id="@+id/tableRow7"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" >
-
-            <TextView
-                android:id="@+id/textView7"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="link 2" />
-        </TableRow>
-
-        <TableRow
-            android:id="@+id/tableRow8"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" >
-
-            <TextView
-                android:id="@+id/textView8"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="etc..." />
-        </TableRow>
-    </TableLayout>
-
-</RelativeLayout>
+</LinearLayout>

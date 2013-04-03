@@ -1,21 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="?whiteBackground"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:background="#ffff"
-    android:orientation="vertical" >
+    android:gravity="center_horizontal|center_vertical"
+    android:orientation="vertical"
+    tools:ignore="HardcodedText,NestedWeights" >
 
-    <GridView
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        android:id="@+id/gridview"
+    <!-- Buttons -->
+
+    <TextView
+        style="?textLarge"
         android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:columnWidth="90dp"
+        android:layout_height="wrap_content"
+        android:text="Official Classroom Services/CIDDE Application"
+        tools:ignore="HardcodedText" />
+
+    <!-- Buttons 1 & 2 -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
         android:gravity="center"
-        android:horizontalSpacing="10dp"
-        android:numColumns="2"
-        android:stretchMode="columnWidth"
-        android:verticalSpacing="20dp" />
-    <!-- former for gridview: -->
-    <!-- android:numColumns="auto_fit" -->
+        android:orientation="horizontal"
+        android:padding="10dp"
+        tools:ignore="UselessParent" >
+
+        <!-- Button 1 -->
+
+        <LinearLayout
+            android:id="@+id/orderLayout"
+            style="?whiteBackground"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="0.01"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="vertical"
+            tools:ignore="UselessParent" >
+
+            <ImageView
+                android:id="@+id/orderImage"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:contentDescription="orderPic"
+                android:src="@drawable/morder" />
+
+            <View
+                style="?listDivider"
+                android:layout_width="fill_parent"
+                android:layout_height="1sp" />
+
+            <TextView
+                style="?textRegular"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Order From Web"
+                tools:ignore="HardcodedText" />
+        </LinearLayout>
+        <!-- Button 1 -->
+
+
+        <!-- Button 2 -->
+
+        <LinearLayout
+            android:id="@+id/browseLayout"
+            style="?whiteBackground"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="0.01"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="vertical"
+            tools:ignore="UselessParent" >
+
+            <ImageView
+                android:id="@+id/browseImage"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:contentDescription="browsePic"
+                android:src="@drawable/mbrowse" />
+
+            <View
+                style="?listDivider"
+                android:layout_width="fill_parent"
+                android:layout_height="1sp" />
+
+            <TextView
+                style="?textRegular"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Browse Classrooms"
+                tools:ignore="HardcodedText" />
+        </LinearLayout>
+        <!-- Button 2 -->
+    </LinearLayout>
+
+    <!-- Buttons 1& 2 -->
+
+
+    <!-- Buttons 3 & 4 -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        tools:ignore="UselessParent" >
+
+        <!-- Button 3 -->
+
+        <LinearLayout
+            android:id="@+id/contactLayout"
+            style="?whiteBackground"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="0.01"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="vertical"
+            tools:ignore="UselessParent" >
+
+            <ImageView
+                android:id="@+id/contactImage"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:contentDescription="orderPic"
+                android:src="@drawable/mcontact" />
+
+            <View
+                style="?listDivider"
+                android:layout_width="fill_parent"
+                android:layout_height="1sp" />
+
+            <TextView
+                style="?textRegular"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Contact Us"
+                tools:ignore="HardcodedText" />
+        </LinearLayout>
+        <!-- Button 3 -->
+
+
+        <!-- Button 4 -->
+
+        <LinearLayout
+            android:id="@+id/howtoLayout"
+            style="?whiteBackground"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="0.01"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="vertical"
+            tools:ignore="UselessParent" >
+
+            <ImageView
+                android:id="@+id/howtoImage"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:contentDescription="browsePic"
+                android:src="@drawable/mhow" />
+
+            <View
+                style="?listDivider"
+                android:layout_width="fill_parent"
+                android:layout_height="1sp" />
+
+            <TextView
+                style="?textRegular"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="How To..."
+                tools:ignore="HardcodedText" />
+        </LinearLayout>
+        <!-- Button 4 -->
+    </LinearLayout>
+    <!-- Buttons 3 & 4 -->
+
+
+    <!-- Buttons 5 & 6 -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        tools:ignore="UselessParent" >
+
+        <!-- Button 5 -->
+
+        <LinearLayout
+            android:id="@+id/gpsLayout"
+            style="?whiteBackground"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="0.01"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="vertical"
+            tools:ignore="UselessParent" >
+
+            <ImageView
+                android:id="@+id/gpsImage"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:contentDescription="orderPic"
+                android:src="@drawable/mgps" />
+
+            <View
+                style="?listDivider"
+                android:layout_width="fill_parent"
+                android:layout_height="1sp" />
+
+            <TextView
+                style="?textRegular"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Map View"
+                tools:ignore="HardcodedText" />
+        </LinearLayout>
+        <!-- Button 5 -->
+
+
+        <!-- Button 6 -->
+
+        <LinearLayout
+            android:id="@+id/qrLayout"
+            style="?whiteBackground"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="0.01"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="vertical"
+            tools:ignore="UselessParent" >
+
+            <ImageView
+                android:id="@+id/qrImage"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:contentDescription="orderPic"
+                android:src="@drawable/qrcode" />
+
+            <View
+                style="?listDivider"
+                android:layout_width="fill_parent"
+                android:layout_height="1sp" />
+
+            <TextView
+                style="?textRegular"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Scan QR Code"
+                tools:ignore="HardcodedText" />
+        </LinearLayout>
+        <!-- Button 6 -->
+
+    </LinearLayout>
+
+    <!-- Buttons 5 & 6 -->
 
 </LinearLayout>
