@@ -42,6 +42,7 @@ public class ClassRoomInfoActivity extends Activity {
 						.parse("http://www.cidde.pitt.edu/-35")));
 			} // end of listener method
 		}); // end of anon listener class
+
 	} // end of on create
 
 	// Options Menu

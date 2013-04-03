@@ -24,7 +24,7 @@
             android:id="@+id/button1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Cathedral of Learning #204" />
+            android:text="Cathedral of Learning #142" />
 
         <Button
             android:id="@+id/button2"
