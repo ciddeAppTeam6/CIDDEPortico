@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
     <string-array name="how_to_options">
         <item>How to use this app</item>
         <item>How to set up a projector</item>
@@ -15,4 +16,5 @@
         <item>Other option</item>
         <item>Other option</item>
     </string-array>
+
 </resources>

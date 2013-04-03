@@ -39,7 +39,8 @@ public class EquipmentInfoActivity extends Activity {
 		howto_setup_equip_button.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View v) {
-				Intent equipHowTo = new Intent(EquipmentInfoActivity.this, ViewPagerActivity.class);
+				Intent equipHowTo = new Intent(EquipmentInfoActivity.this,
+						ViewPagerActivity.class);
 				equipHowTo.putExtra("intType", 1250);
 				startActivity(equipHowTo);
 			} // end of listener method

@@ -2,8 +2,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="top"
     android:background="#071c71"
+    android:gravity="top"
     tools:context=".CiddeSubmitBugReportActivity" >
 
     <EditText
@@ -42,8 +42,8 @@
         android:layout_alignParentRight="true"
         android:layout_alignTop="@+id/editText2"
         android:background="#ffd573"
-        android:textColor="#021049"
-        android:text="Search" />
+        android:text="Search"
+        android:textColor="#021049" />
 
     <Button
         android:id="@+id/button3"
@@ -52,8 +52,8 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
         android:background="#ffd573"
-        android:textColor="#021049"
-        android:text="Scan QR Code" />
+        android:text="Scan QR Code"
+        android:textColor="#021049" />
 
     <TextView
         android:id="@+id/textView3"

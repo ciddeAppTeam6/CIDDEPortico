@@ -1,20 +1,94 @@
-<resources>
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <!--
-        Base application theme, dependent on API level. This theme is replaced
-        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
-    -->
-    <style name="AppBaseTheme" parent="android:Theme.Light">
+    <!-- =============================================================== -->
+    <!-- Generic Styles -->
+    <!-- =============================================================== -->
+
+    <style name="list_divider">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">1dip</item>
+        <item name="android:layout_marginTop">4dip</item>
+        <item name="android:layout_marginBottom">4dip</item>
+    </style>
+
+    <!-- =============================================================== -->
+    <!-- Blue styles -->
+    <!-- =============================================================== -->
+
+    <dimen name="page_margin_bl">2sp</dimen>
+    <dimen name="content_left_margin_bl">8sp</dimen>
+
+    <style name="page_background_bl">
+        <item name="android:background">#071c71</item>
+        <item name="android:padding">@dimen/page_margin_bl</item>
         <!--
-            Theme customizations available in newer API levels can go in
-            res/values-vXX/styles.xml, while customizations related to
-            backward-compatibility can go here.
+ 		<item name="android:layout_marginTop">8dip</item>
+ 		<item name="android:layout_marginBottom">20dip</item>
         -->
     </style>
 
-    <!-- Application theme. -->
-    <style name="AppTheme" parent="AppBaseTheme">
-        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    <style name="text_title_bl">
+        <item name="android:textColor">#ffd573</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:gravity">center_vertical|left</item>
+        <item name="android:paddingLeft">5sp</item>
+        <item name="android:shadowDx">1.0</item>
+        <item name="android:shadowDy">1.0</item>
+        <item name="android:shadowRadius">1</item>
+        <item name="android:shadowColor">#DDD</item>
+        <item name="android:background">#000</item>
+    </style>
+
+    <style name="text_subheader_bl">
+        <item name="android:textColor">#ffd573</item>
+        <item name="android:paddingLeft">5sp</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:shadowDy">1.0</item>
+        <item name="android:shadowRadius">1</item>
+        <item name="android:shadowColor">#666</item>
+        <item name="android:layout_marginTop">10dp</item>
+    </style>
+
+    <style name="text_large_bl">
+        <item name="android:textColor">#ffd573</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">22sp</item>
+    </style>
+
+    <style name="text_regular_bl">
+        <item name="android:textColor">#ffd573</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:paddingLeft">10dp</item>
+    </style>
+
+    <style name="white_background_bl">
+        <item name="android:background">@drawable/white_container_bl</item>
+        <item name="android:padding">5sp</item>
+    </style>
+
+    <style name="button_bl">
+        <item name="android:background">@drawable/button_bl</item>
+        <item name="android:textColor">#021049</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:layout_margin">3sp</item>
+        <item name="android:paddingTop">11sp</item>
+        <item name="android:paddingBottom">11sp</item>
+        <item name="android:radius">10dp</item>
+    </style>
+
+    <style name="list_item_bl" parent="text_large_bl">
+        <item name="android:background">@drawable/list_item_bl</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
+    </style>
+
+    <style name="list_divider_bl" parent="list_divider">
+        <item name="android:background">@drawable/list_divider_bl</item>
     </style>
 
 </resources>

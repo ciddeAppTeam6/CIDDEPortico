@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
     <string-array name="troubleshoot_options">
         <item>Powerpoint</item>
         <item>Audio System</item>
@@ -15,4 +16,5 @@
         <item>Other option</item>
         <item>Other option</item>
     </string-array>
+
 </resources>
