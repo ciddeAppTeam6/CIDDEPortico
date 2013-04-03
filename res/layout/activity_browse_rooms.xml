@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    tools:ignore="HardcodedText" >
+
+    <TextView
+        style="?textTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/browse_room_string" />
+
+    <ScrollView
+        style="?pageBackground"
+        android:layout_width="fill_parent"
+        android:layout_height="0px"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                style="?textLarge"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="Cathedral of Learning"
+                tools:ignore="HardcodedText" />
+
+            <!-- You cannot have a ListView inside of a ScrollView. This LinearLayout acts like one. -->
+
+            <LinearLayout
+                style="?whiteBackground"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <Button
+                    android:id="@+id/room1"
+                    style="?listItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="101" />
+
+                <View
+                    style="?listDivider"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1sp" />
+
+                <Button
+                    android:id="@+id/room2"
+                    style="?listItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="102" />
+
+                <View
+                    style="?listDivider"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1sp" />
+
+                <Button
+                    android:id="@+id/room3"
+                    style="?listItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="103" />
+
+                <View
+                    style="?listDivider"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1sp" />
+
+                <Button
+                    android:id="@+id/room4"
+                    style="?listItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="142" />
+
+                <View
+                    style="?listDivider"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1sp" />
+
+                <Button
+                    android:id="@+id/room5"
+                    style="?listItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="143" />
+
+                <View
+                    style="?listDivider"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1sp" />
+
+                <Button
+                    android:id="@+id/room6"
+                    style="?listItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="144" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

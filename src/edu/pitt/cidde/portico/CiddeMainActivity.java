@@ -6,53 +6,94 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.View;
-import android.widget.AdapterView;
-import android.widget.AdapterView.OnItemClickListener;
-import android.widget.GridView;
-import android.widget.Toast;
+import android.view.View.OnClickListener;
+import android.widget.LinearLayout;
 
 public class CiddeMainActivity extends Activity {
+
+	LinearLayout orderLayout;
+	LinearLayout browseLayout;
+	LinearLayout contactLayout;
+	LinearLayout howtoLayout;
+	LinearLayout qrLayout;
+	LinearLayout gpsLayout;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_cidde_main);
 
-		// LOGIC HERE for CIDDE GridView
-		GridView gridview = (GridView) findViewById(R.id.gridview);
-		gridview.setAdapter(new MainImageAdapter(this));
+		// Order button
+		orderLayout = (LinearLayout) findViewById(R.id.orderLayout);
+		orderLayout.setOnClickListener(new OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				startActivity(new Intent(Intent.ACTION_VIEW, Uri
+						.parse("http://www.cidde.pitt.edu/-35")));
+			} // end of listener method
+		}); // end of anon listener class
 
-		gridview.setOnItemClickListener(new OnItemClickListener() {
-			public void onItemClick(AdapterView<?> parent, View v,
-					int position, long id) {
-				switch (position) // determine what TYPE of brick will go here
-				{
-				case 0:
-					doIntentSCanQR();
-					break;
-				case 1:
-					doIntentBrwsEquipRoom();
-					break;
-				case 2:
-					doIntentNeedHelp();
-					break;
-				case 3:
-					doIntentBugReport();
-					break;
-				case 4:
-					doIntentHowTo();
-					break;
-				case 5:
-					doIntentOrderWeb();
-					break;
-				default:
-					Toast.makeText(CiddeMainActivity.this, "?unknown option?",
-							Toast.LENGTH_SHORT).show();
-				} // switch (item click position)
+		// Browse button
+		browseLayout = (LinearLayout) findViewById(R.id.browseLayout);
+		browseLayout.setOnClickListener(new View.OnClickListener() {
+			public void onClick(View v) {
+
+				Intent howToIntent = new Intent(CiddeMainActivity.this,
+						CiddeBrowseRooms.class);
+				startActivity(howToIntent);
+
 			}
 		});
 
-	} // onCreate()
+		// Contact button
+		contactLayout = (LinearLayout) findViewById(R.id.contactLayout);
+		contactLayout.setOnClickListener(new View.OnClickListener() {
+			public void onClick(View v) {
+
+				Intent howToIntent = new Intent(CiddeMainActivity.this,
+						CiddeHelpActivity.class);
+				startActivity(howToIntent);
+
+			}
+		});
+
+		// How To button
+		howtoLayout = (LinearLayout) findViewById(R.id.howtoLayout);
+		howtoLayout.setOnClickListener(new View.OnClickListener() {
+			public void onClick(View v) {
+
+				Intent howToIntent = new Intent(CiddeMainActivity.this,
+						CiddeHowToActivity.class);
+				startActivity(howToIntent);
+
+			}
+		});
+
+		// QR button
+		qrLayout = (LinearLayout) findViewById(R.id.qrLayout);
+		qrLayout.setOnClickListener(new View.OnClickListener() {
+			public void onClick(View v) {
+
+				Intent howToIntent = new Intent(CiddeMainActivity.this,
+						CiddeScanQRcodeActivity.class);
+				startActivity(howToIntent);
+
+			}
+		});
+		
+		// GPS button
+		gpsLayout = (LinearLayout) findViewById(R.id.gpsLayout);
+		gpsLayout.setOnClickListener(new View.OnClickListener() {
+			public void onClick(View v) {
+
+				Intent howToIntent = new Intent(CiddeMainActivity.this,
+						CiddeGPSActivity.class);
+				startActivity(howToIntent);
+
+			}
+		});
+
+	}// onCreate()
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
@@ -60,81 +101,4 @@ public class CiddeMainActivity extends Activity {
 		getMenuInflater().inflate(R.menu.activity_cidde_main, menu);
 		return true;
 	}
-
-	// Send intent to activate the other activities of the app
-	// =======================================================
-
-	// Scan QR code (0)
-	// ------------
-	private void doIntentSCanQR() {
-		// Toast.makeText(CiddeMainActivity.this, "Scan QR Code",
-		// Toast.LENGTH_SHORT).show();
-
-		Intent QRIntent = new Intent(
-				edu.pitt.cidde.portico.CiddeMainActivity.this,
-				edu.pitt.cidde.portico.CiddeScanQRcodeActivity.class);
-
-		startActivity(QRIntent);
-	}
-
-	// Browse equipment (1)
-	// ----------------
-	private void doIntentBrwsEquipRoom() {
-		// Toast.makeText(CiddeMainActivity.this, "Browse Equipment & Rooms",
-		// Toast.LENGTH_SHORT).show();
-
-		startActivity(new Intent(this, CiddeBrowseEquipRooms.class));
-	} // doIntentBrwsEquipRoom
-
-	// "I need help" (2)
-	// -------------
-	private void doIntentNeedHelp() {
-		// Toast.makeText(CiddeMainActivity.this,
-		// "I Need Help!", Toast.LENGTH_SHORT).show();
-
-		// Start up the new screen
-		Intent howToIntent = new Intent(
-				edu.pitt.cidde.portico.CiddeMainActivity.this,
-				edu.pitt.cidde.portico.CiddeHelpActivity.class);
-
-		startActivity(howToIntent);
-
-	} // doIntentNeedHelp
-
-	// Submit bug report (3)
-	// -----------------
-	private void doIntentBugReport() {
-		// Toast.makeText(CiddeMainActivity.this, "Submit Bug Report!",
-		// Toast.LENGTH_SHORT).show();
-		startActivity(new Intent(
-				Intent.ACTION_VIEW,
-				Uri.parse("https://pitt.wufoo.com/forms/cidde-classroom-technology-problem-report-form/")));
-	} // doIntentBugReport
-
-	// How To.... (4)
-	// ----------
-	private void doIntentHowTo() {
-		// Start up the new screen
-		Intent howToIntent = new Intent(
-				edu.pitt.cidde.portico.CiddeMainActivity.this,
-				edu.pitt.cidde.portico.CiddeHowToActivity.class);
-
-		// Attach the data to the intent and start the child activity
-		// howToIntent.putExtra("intLetterData", intActivityData); // do not use
-		// resources for this
-		// startActivityForResult(howToIntent, 4); // start child activity, if
-		// result needed
-		startActivity(howToIntent); // start child activity, result needed
-
-	} // doIntentHowTo
-
-	// order from web (5)
-	// --------------
-	private void doIntentOrderWeb() {
-		// Toast.makeText(CiddeMainActivity.this, "Order From Web..",
-		// Toast.LENGTH_SHORT).show();
-
-		startActivity(new Intent(Intent.ACTION_VIEW,
-				Uri.parse("http://www.cidde.pitt.edu/-35")));
-	} // doIntentOrderWeb
 }
