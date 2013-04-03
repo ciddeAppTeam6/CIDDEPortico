@@ -14,7 +14,7 @@
         android:onClick="troubleshoot"
         android:text="Let&apos;s Troubleshoot" />
 
-   <TableLayout
+    <TableLayout
         android:id="@+id/tableLayout1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -102,7 +102,7 @@
             android:id="@+id/tableRow9"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="1">
+            android:layout_weight="1" >
 
             <TextView
                 android:id="@+id/textView9"
@@ -118,10 +118,9 @@
                 android:layout_weight="1"
                 android:text="(###) ###-####" />
         </TableRow>
-
     </TableLayout>
 
-     <TableLayout
+    <TableLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/tableLayout1"
@@ -138,7 +137,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Useful Links:" />
-
         </TableRow>
 
         <TableRow
@@ -148,11 +146,10 @@
 
             <TextView
                 android:id="@+id/textView6"
-                android:autoLink="web"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:autoLink="web"
                 android:text="http://www.cidde.pitt.edu/" />
-
         </TableRow>
 
         <TableRow
@@ -165,7 +162,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="link 2" />
-
         </TableRow>
 
         <TableRow
@@ -178,7 +174,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="etc..." />
-
         </TableRow>
     </TableLayout>
 

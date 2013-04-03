@@ -21,12 +21,12 @@ public class CiddeHelpActivity extends Activity {
 		return true;
 	}
 
-	//Called when the user clicks the Let's Troubleshoot button
-    public void troubleshoot(View view)
-    {
-    	//Do something in response to button
-    	Intent troubleshootIntent = new Intent(this, CiddeTroubleshootActivity.class);
+	// Called when the user clicks the Let's Troubleshoot button
+	public void troubleshoot(View view) {
+		// Do something in response to button
+		Intent troubleshootIntent = new Intent(this,
+				CiddeTroubleshootActivity.class);
 
 		startActivity(troubleshootIntent);
-    }
+	}
 }

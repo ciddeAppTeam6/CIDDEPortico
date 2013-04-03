@@ -1,7 +1,17 @@
-<shape xmlns:android="http://schemas.android.com/apk/res/android"> 
-    <stroke android:width="2dp" android:color="#a0a0a0" /> 
-    <solid android:color="#ffffff" /> 
-    <padding android:left="7dp" android:top="7dp" 
-            android:right="7dp" android:bottom="0dp" /> 
-    <corners android:radius="3dp" /> 
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <stroke
+        android:width="2dp"
+        android:color="#a0a0a0" />
+
+    <solid android:color="#ffffff" />
+
+    <padding
+        android:bottom="0dp"
+        android:left="7dp"
+        android:right="7dp"
+        android:top="7dp" />
+
+    <corners android:radius="3dp" />
+
 </shape>
