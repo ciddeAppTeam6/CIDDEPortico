@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    tools:ignore="HardcodedText" >
+
+    <TextView
+        style="?textTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/title_activity_class_room_info" />
+
+    <ScrollView
+        style="?pageBackground"
+        android:layout_width="fill_parent"
+        android:layout_height="0px"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                style="?textLarge"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="Cathedral of Learning: 119 - German Room"
+                tools:ignore="HardcodedText" />
+
+            <!-- You cannot have a ListView inside of a ScrollView. This LinearLayout acts like one. -->
+
+            <LinearLayout
+                style="?whiteBackground"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <Button
+                    android:id="@+id/order_classroom_button"
+                    style="?listItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="@string/order_classroom_string" />
+
+                <View
+                    style="?listDivider"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1sp" />
+
+                <Button
+                    android:id="@+id/report_problem_classroom_button"
+                    style="?listItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="@string/report_problem_classroom_string" />
+            </LinearLayout>
+
+            <TextView
+                style="?textSubheader"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/class_subtitle_text" />
+
+            <LinearLayout
+                style="?whiteBackground"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    style="?textRegular"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Number of seats: 35"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    style="?textRegular"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="What&apos;s installed:
+                    - Nothing" />
+
+                <TextView
+                    style="?textRegular"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Windows? Yes" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="?whiteBackground"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/german_imageview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="German Nationality Room"
+                    android:padding=" 5dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/german" />
+            </LinearLayout>
+
+            <TextView
+                style="?textSubheader"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/more_info_string" />
+
+            <LinearLayout
+                style="?whiteBackground"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <Button
+                    android:id="@+id/more_button"
+                    style="?listItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="@string/virtual_tour_string" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

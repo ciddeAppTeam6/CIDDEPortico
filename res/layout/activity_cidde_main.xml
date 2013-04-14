@@ -173,7 +173,7 @@
                 android:layout_width="75dp"
                 android:layout_height="75dp"
                 android:contentDescription="browsePic"
-                android:src="@drawable/mhow" />
+                android:src="@drawable/minfo" />
 
             <View
                 style="?listDivider"
