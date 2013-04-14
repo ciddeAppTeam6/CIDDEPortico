@@ -17,8 +17,8 @@ public class CiddeHowToActivity extends ListActivity {
 		super.onCreate(savedInstanceState);
 
 		// Set the "button" labels
-		values = new String[] { "How to use this app",
-				"How to set up a projector", "How to set up a powerpoint" };
+		values = new String[] { "Navigate this app",
+				"Set up a projector", "Set up a powerpoint" };
 		values = getResources().getStringArray(R.array.how_to_options);
 
 		// Define the array adapter

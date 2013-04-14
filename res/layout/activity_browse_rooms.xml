@@ -40,12 +40,15 @@
                 android:orientation="vertical" >
 
                 <Button
-                    android:id="@+id/room1"
+                    android:id="@+id/czech_button"
                     style="?listItem"
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_weight="1"
-                    android:text="101" />
+                    android:gravity="left"
+                    android:height="22dp"
+                    android:paddingLeft="10dp"
+                    android:text="113 - Czechoslovak Room" />
 
                 <View
                     style="?listDivider"
@@ -53,12 +56,15 @@
                     android:layout_height="1sp" />
 
                 <Button
-                    android:id="@+id/room2"
+                    android:id="@+id/italian_button"
                     style="?listItem"
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_weight="1"
-                    android:text="102" />
+                    android:gravity="left"
+                    android:height="22dp"
+                    android:paddingLeft="10dp"
+                    android:text="116 - Italian Room" />
 
                 <View
                     style="?listDivider"
@@ -66,12 +72,15 @@
                     android:layout_height="1sp" />
 
                 <Button
-                    android:id="@+id/room3"
+                    android:id="@+id/german_button"
                     style="?listItem"
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_weight="1"
-                    android:text="103" />
+                    android:gravity="left"
+                    android:height="22dp"
+                    android:paddingLeft="10dp"
+                    android:text="119 - German Room" />
 
                 <View
                     style="?listDivider"
@@ -79,12 +88,15 @@
                     android:layout_height="1sp" />
 
                 <Button
-                    android:id="@+id/room4"
+                    android:id="@+id/hungarian_button"
                     style="?listItem"
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_weight="1"
-                    android:text="142" />
+                    android:gravity="left"
+                    android:height="22dp"
+                    android:paddingLeft="10dp"
+                    android:text="121 - Hungarian Room" />
 
                 <View
                     style="?listDivider"
@@ -92,12 +104,15 @@
                     android:layout_height="1sp" />
 
                 <Button
-                    android:id="@+id/room5"
+                    android:id="@+id/polish_button"
                     style="?listItem"
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_weight="1"
-                    android:text="143" />
+                    android:gravity="left"
+                    android:height="22dp"
+                    android:paddingLeft="10dp"
+                    android:text="126 - Polish Room" />
 
                 <View
                     style="?listDivider"
@@ -105,13 +120,353 @@
                     android:layout_height="1sp" />
 
                 <Button
-                    android:id="@+id/room6"
+                    android:id="@+id/irish_button"
                     style="?listItem"
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_weight="1"
-                    android:text="144" />
+                    android:gravity="left"
+                    android:height="22dp"
+                    android:paddingLeft="10dp"
+                    android:text="127 - Irish Room" />
+
+                <View
+                    style="?listDivider"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1sp" />
+
+                <Button
+                    android:id="@+id/lith_button"
+                    style="?listItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:height="22dp"
+                    android:paddingLeft="10dp"
+                    android:text="129 - Lithuanian Room" />
+
+                <View
+                    style="?listDivider"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1sp" />
+
+                <Button
+                    android:id="@+id/romanian_button"
+                    style="?listItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:height="22dp"
+                    android:paddingLeft="10dp"
+                    android:text="130 - Romanian Room" />
+
+                <View
+                    style="?listDivider"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1sp" />
+
+                <Button
+                    android:id="@+id/swedish_button"
+                    style="?listItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:height="22dp"
+                    android:paddingLeft="10dp"
+                    android:text="135 - Swedish Room" />
+
+                <View
+                    style="?listDivider"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1sp" />
+
+                <Button
+                    android:id="@+id/chinese_button"
+                    style="?listItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:height="22dp"
+                    android:paddingLeft="10dp"
+                    android:text="136 - Chinese Room" />
+
+                <View
+                    style="?listDivider"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1sp" />
+
+                <Button
+                    android:id="@+id/greek_button"
+                    style="?listItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:height="22dp"
+                    android:paddingLeft="10dp"
+                    android:text="137 - Greek Room" />
+
+                <View
+                    style="?listDivider"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1sp" />
+
+                <Button
+                    android:id="@+id/scottish_button"
+                    style="?listItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:height="22dp"
+                    android:paddingLeft="10dp"
+                    android:text="139 - Scottish Room" />
+
+                <View
+                    style="?listDivider"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1sp" />
+
+                <Button
+                    android:id="@+id/yugoslav_button"
+                    style="?listItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:height="22dp"
+                    android:paddingLeft="10dp"
+                    android:text="142 - Yugoslav Room" />
+
+                <View
+                    style="?listDivider"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1sp" />
+
+                <Button
+                    android:id="@+id/english_button"
+                    style="?listItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:height="22dp"
+                    android:paddingLeft="10dp"
+                    android:text="144 - English Room" />
+
+                <View
+                    style="?listDivider"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1sp" />
+
+                <Button
+                    android:id="@+id/french_button"
+                    style="?listItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:height="22dp"
+                    android:paddingLeft="10dp"
+                    android:text="149 - French Room" />
+
+                <View
+                    style="?listDivider"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1sp" />
+
+                <Button
+                    android:id="@+id/norwegian_button"
+                    style="?listItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:height="22dp"
+                    android:paddingLeft="10dp"
+                    android:text="151 - Norwegian Room" />
+
+                <View
+                    style="?listDivider"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1sp" />
+
+                <Button
+                    android:id="@+id/russian_button"
+                    style="?listItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:height="22dp"
+                    android:paddingLeft="10dp"
+                    android:text="153 - Russian Room" />
+
+                <View
+                    style="?listDivider"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1sp" />
+
+                <Button
+                    android:id="@+id/syria_button"
+                    style="?listItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:height="22dp"
+                    android:paddingLeft="10dp"
+                    android:text="160 - Syria-Lebanon Room" />
+
+                <View
+                    style="?listDivider"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1sp" />
+
+                <Button
+                    android:id="@+id/austrian_button"
+                    style="?listItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:height="22dp"
+                    android:paddingLeft="10dp"
+                    android:text="314 - Austrian Room" />
+
+                <View
+                    style="?listDivider"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1sp" />
+
+                <Button
+                    android:id="@+id/jap_button"
+                    style="?listItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:height="22dp"
+                    android:paddingLeft="10dp"
+                    android:text="317 - Japanese Room" />
+
+                <View
+                    style="?listDivider"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1sp" />
+
+                <Button
+                    android:id="@+id/armenian_button"
+                    style="?listItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:height="22dp"
+                    android:paddingLeft="10dp"
+                    android:text="319 - Armenian Room" />
+
+                <View
+                    style="?listDivider"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1sp" />
+
+                <Button
+                    android:id="@+id/india_button"
+                    style="?listItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:height="22dp"
+                    android:paddingLeft="10dp"
+                    android:text="327 - Indian Room" />
+
+                <View
+                    style="?listDivider"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1sp" />
+
+                <Button
+                    android:id="@+id/early_am_button"
+                    style="?listItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:height="22dp"
+                    android:paddingLeft="10dp"
+                    android:text="328 - Early American Room" />
+
+                <View
+                    style="?listDivider"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1sp" />
+
+                <Button
+                    android:id="@+id/africa_button"
+                    style="?listItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:height="22dp"
+                    android:paddingLeft="10dp"
+                    android:text="330 - African Room" />
+
+                <View
+                    style="?listDivider"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1sp" />
+
+                <Button
+                    android:id="@+id/israel_button"
+                    style="?listItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:height="22dp"
+                    android:paddingLeft="10dp"
+                    android:text="337 - Israeli Room" />
+
+                <View
+                    style="?listDivider"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1sp" />
+
+                <Button
+                    android:id="@+id/ukranian_button"
+                    style="?listItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:height="22dp"
+                    android:paddingLeft="10dp"
+                    android:text="341 - Ukranian Room" />
+
+                <View
+                    style="?listDivider"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1sp" />
+
+                <Button
+                    android:id="@+id/welsh_button"
+                    style="?listItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:height="22dp"
+                    android:paddingLeft="10dp"
+                    android:text="342 - Welsh Room" />
             </LinearLayout>
+
         </LinearLayout>
     </ScrollView>
 

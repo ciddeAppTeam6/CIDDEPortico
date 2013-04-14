@@ -2,19 +2,19 @@
 <resources>
 
     <string-array name="how_to_options">
-        <item>How to use this app</item>
-        <item>How to set up a projector</item>
-        <item>How to set up a powerpoint</item>
-        <item>How to set up audio</item>
-        <item>Other option</item>
-        <item>Other option</item>
-        <item>Other option</item>
-        <item>Other option</item>
-        <item>Other option</item>
-        <item>Other option</item>
-        <item>Other option</item>
-        <item>Other option</item>
-        <item>Other option</item>
+        <item>Navigate this app</item>
+        <item>Set up a mobile projector</item>
+        <item>Set up a powerpoint</item>
+        <item>Set up a wired mic</item>
+        <item>Set up a wireless mic</item>
+        <item>Connect to PittNet</item>
+        <item>Log into University computers</item>
+        <item>Get to Blackboard</item>
+        <item>Connect a VGA cable</item>
+        <item>Switch input on a projector</item>
+        <item>Use a digital visualizer</item>
+        <item>Use an Explorer Speaker</item>
+        <item>Eat watermelon efficiently</item>
     </string-array>
 
 </resources>
