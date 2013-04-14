@@ -39,6 +39,13 @@
                     style="?textRegular"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
+                    android:text="Classroom Services"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    style="?textRegular"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
                     android:text="Alumni Hall, Suite B10"
                     tools:ignore="HardcodedText" />
 
@@ -97,12 +104,15 @@
                 android:orientation="vertical" >
 
                 <Button
-                    android:id="@+id/order_classroom_button"
+                    android:id="@+id/emergency_button"
                     style="?listItem"
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_weight="1"
-                    android:text="412-648-7240" />
+                    android:height="22dp"
+                    android:text="EMERGENCY HELP LINE: 412-648-2831"
+                    android:textColor="#FF0505"
+                    android:textSize="14sp" />
 
                 <View
                     style="?listDivider"
@@ -110,12 +120,215 @@
                     android:layout_height="1sp" />
 
                 <Button
-                    android:id="@+id/report_problem_classroom_button"
+                    android:id="@+id/general_button"
                     style="?listItem"
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_weight="1"
-                    android:text="Fax: 412-648-8812" />
+                    android:height="22dp"
+                    android:text="Main: 412-648-7240"
+                    android:textSize="14sp" />
+
+                <View
+                    style="?listDivider"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1sp" />
+
+                <Button
+                    android:id="@+id/requests_button"
+                    style="?listItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:height="22dp"
+                    android:text="Placing or Changing Requests: 412-648-7240"
+                    android:textSize="14sp" />
+
+                <View
+                    style="?listDivider"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1sp" />
+
+                <Button
+                    android:id="@+id/schedule_button"
+                    style="?listItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:height="22dp"
+                    android:text="Scheduling Questions: 412-648-7237"
+                    android:textSize="14sp" />
+
+                <View
+                    style="?listDivider"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1sp" />
+
+                <Button
+                    android:id="@+id/recording_button"
+                    style="?listItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:height="22dp"
+                    android:text="Video Recording Questions 412-624-6918"
+                    android:textSize="14sp" />
+
+                <View
+                    style="?listDivider"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1sp" />
+
+                <Button
+                    android:id="@+id/late_button"
+                    style="?listItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:height="22dp"
+                    android:text="Late or Lost Equipment: 412-648-2834"
+                    android:textSize="14sp" />
+
+                <View
+                    style="?listDivider"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1sp" />
+
+                <Button
+                    android:id="@+id/other_button"
+                    style="?listItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:height="22dp"
+                    android:text="Other General Questions: 412-648-7239"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <TextView
+                style="?textSubheader"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="People and Departments"
+                tools:ignore="HardcodedText" />
+
+            <!-- You cannot have a ListView inside of a ScrollView. This LinearLayout acts like one. -->
+
+            <LinearLayout
+                style="?whiteBackground"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <Button
+                    android:id="@+id/etc_button"
+                    style="?listItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="Educational Technology Center: 412-624-8757"
+                    android:height="22dp"
+                    android:textColor="#ffd573"
+                    android:textSize="14sp" />
+
+                <View
+                    style="?listDivider"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1sp" />
+
+                <Button
+                    android:id="@+id/faculty_help_button"
+                    style="?listItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="Faculty Help: 412-648-2832"
+                    android:height="22dp"
+                    android:textSize="14sp" />
+
+                <View
+                    style="?listDivider"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1sp" />
+
+                <Button
+                    android:id="@+id/gabe_button"
+                    style="?listItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="Gabrielle Dean: 412-648-7237\r\nClassroom Services Manager"
+                    android:textSize="14sp" />
+
+                <View
+                    style="?listDivider"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1sp" />
+
+                <Button
+                    android:id="@+id/ashley_button"
+                    style="?listItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="Ashley Walters: 412-648-7240\r\nReception"
+                    android:textSize="14sp" />
+
+                <View
+                    style="?listDivider"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1sp" />
+
+                <Button
+                    android:id="@+id/adawg_button"
+                    style="?listItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="Aaron Graham: 412-648-2834\r\nAssistant Manager/Inventory"
+                    android:textSize="14sp" />
+
+                <View
+                    style="?listDivider"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1sp" />
+
+                <Button
+                    android:id="@+id/will_button"
+                    style="?listItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="Will Hinson: 412-648-7241\r\nIT Specialist"
+                    android:textSize="14sp" />
+
+                <View
+                    style="?listDivider"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1sp" />
+
+                <Button
+                    android:id="@+id/betty_button"
+                    style="?listItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="Betty Homonai: 412-624-8128\r\nEngineering"
+                    android:textSize="14sp" />
+
+                <View
+                    style="?listDivider"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1sp" />
+
+                <Button
+                    android:id="@+id/blaine_button"
+                    style="?listItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="Blaine Walker: 412-648-3013\r\nUniversity Event Support"
+                    android:textSize="14sp" />
             </LinearLayout>
 
             <TextView
@@ -134,7 +347,7 @@
                     style="?textRegular"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
-                    android:text="Personal emails?" />
+                    android:text="mediareq@pitt.edu" />
             </LinearLayout>
 
             <TextView
@@ -162,7 +375,6 @@
                     android:text="http://www.cidde.pitt.edu/" />
             </LinearLayout>
         </LinearLayout>
-
     </ScrollView>
 
 </LinearLayout>

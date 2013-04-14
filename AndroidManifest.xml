@@ -11,6 +11,7 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
 
     <application
         android:allowBackup="true"
@@ -40,16 +41,8 @@
             android:name="edu.pitt.cidde.portico.CiddeHelpActivity"
             android:label="@string/title_activity_cidde_help" >
         </activity>
-        <activity
-            android:name="edu.pitt.cidde.portico.CiddeSubmitBugReportActivity"
-            android:label="@string/title_activity_cidde_submit_bug_report" >
-        </activity>
 
         <!-- Tim's additions -->
-        <activity
-            android:name="edu.pitt.cidde.portico.ClassRoomInfoActivity"
-            android:label="@string/title_activity_class_room_info" >
-        </activity>
         <activity
             android:name="edu.pitt.cidde.portico.ClassRoomInfoActivity"
             android:label="@string/title_activity_class_room_info" >

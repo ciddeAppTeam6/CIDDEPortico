@@ -7,7 +7,6 @@
     <string name="title_activity_how_to">How To...</string>
     <string name="title_activity_how_to_view_pager">How To View Pager</string>
     <string name="title_activity_cidde_help">Help</string>
-    <string name="title_activity_cidde_submit_bug_report">Submit Bug Report</string>
     <string name="title_activity_browse">Browse Classrooms</string>
     <string name="title_activity_class_room_info">Classroom Information</string>
     <string name="title_activity_gps">Map View</string>
@@ -19,6 +18,28 @@
     <string name="order_classroom_string">Order Something For This Classroom</string>
     <string name="browse_room_string">Browse Classrooms</string>
     <string name="contact_string">Contact Information</string>
+    <string name="more_info_string">On The Web:</string>
+    <string name="virtual_tour_string">Nationality Rooms Virtual Tour</string>
+    <!--  -->
+
+
+    <!-- Phone numbers -->
+    <string name="emergency_string">tel:4126482831</string>
+    <string name="main_string">tel:4126487240</string>
+    <string name="requests_string">tel:4126487240</string>
+    <string name="schedule_string">tel:4126487237</string>
+    <string name="recording_string">tel:4126246918</string>
+    <string name="late_string">tel:4126482834</string>
+    <string name="other_string">tel:4126487239</string>
+    
+    <string name="etc_string">tel:4126248757</string>
+    <string name="faculty_help_string">tel:4126482832</string>
+    <string name="gabe_string">tel:4126487237</string>
+    <string name="ashley_string">tel:4126487240</string>
+    <string name="adawg_string">tel:4126482834</string>
+    <string name="will_string">tel:4126487241</string>
+    <string name="betty_string">tel:4126248128</string>
+    <string name="blaine_string">tel:4126483013</string>
     <!--  -->
 
 
