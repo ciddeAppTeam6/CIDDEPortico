@@ -17,8 +17,6 @@ public class CiddeHowToActivity extends ListActivity {
 		super.onCreate(savedInstanceState);
 
 		// Set the "button" labels
-		values = new String[] { "How to use this app",
-				"How to set up a projector", "How to set up a powerpoint" };
 		values = getResources().getStringArray(R.array.how_to_options);
 
 		// Define the array adapter
@@ -33,13 +31,50 @@ public class CiddeHowToActivity extends ListActivity {
 				edu.pitt.cidde.portico.CiddeHowToActivity.this,
 				edu.pitt.cidde.portico.ViewPagerActivity.class);
 
-		if (position == 1) {
+		if (position == 0)
+		{
+			howToBundle.putExtra("intType", 1253);
+			startActivity(howToBundle);
+		}
+		else if (position == 1) 
+		{
 			howToBundle.putExtra("intType", 1250);
 			startActivity(howToBundle);
 		}
 
-		if (position == 2) {
+		else if (position == 2) 
+		{
 			howToBundle.putExtra("intType", 1252);
+			startActivity(howToBundle);
+		}
+		
+		else if (position == 3)
+		{
+			howToBundle.putExtra("intType", 1254);
+			startActivity(howToBundle);
+		}
+		
+		else if (position == 4)
+		{
+			howToBundle.putExtra("intType", 1255);
+			startActivity(howToBundle);
+		}
+		
+		else if (position == 5)
+		{
+			howToBundle.putExtra("intType", 1256);
+			startActivity(howToBundle);
+		}
+		
+		else if (position == 6)
+		{
+			howToBundle.putExtra("intType", 1257);
+			startActivity(howToBundle);
+		}
+		
+		else if (position == 7)
+		{
+			howToBundle.putExtra("intType", 1258);
 			startActivity(howToBundle);
 		}
 	}
