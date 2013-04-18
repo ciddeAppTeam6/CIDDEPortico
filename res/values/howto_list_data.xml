@@ -2,6 +2,7 @@
 <resources>
 
     <string-array name="how_to_options">
+<<<<<<< HEAD
         <item>Navigate this app</item>
         <item>Set up a mobile projector</item>
         <item>Set up a powerpoint</item>
@@ -15,6 +16,20 @@
         <item>Use a digital visualizer</item>
         <item>Use an Explorer Speaker</item>
         <item>Eat watermelon efficiently</item>
+=======
+        <item>How to use this app</item>
+        <item>How to set up a projector</item>
+        <item>How to present a powerpoint</item>
+        <item>How to connect to PittNet (Windows)</item>
+        <item>How to connect to PittNet (Mac)</item>
+        <item>How to set up Self-Service Printing (Windows)</item>
+        <item>How to set up Self-Service Printing (Mac)</item>
+        <item>How to determine bit version (32 or 64) of Windows</item>
+        <item>Other option</item>
+        <item>Other option</item>
+        <item>Other option</item>
+        <item>Other option</item>
+>>>>>>> 656ee04b8f2896b1e5057514659b443a417e9e1b
     </string-array>
 
 </resources>
