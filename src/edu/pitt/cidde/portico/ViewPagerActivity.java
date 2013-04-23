@@ -287,7 +287,7 @@ public class ViewPagerActivity extends FragmentActivity {
 				// How to use this app tutorial
 				else if (parentIntentViewType == 1253) 
 				{
-					whatPageCnt = 8;
+					whatPageCnt = 7;
 				}
 				
 				//How to connect to PittNet (Windows)
@@ -773,7 +773,7 @@ public class ViewPagerActivity extends FragmentActivity {
 
 				textview = new TextView(getActivity());
 				textview.setTextColor(Color.BLACK);
-				textview.setText("Plug one end of the cable into the back of your PC");
+				textview.setText("Plug one end of the cable into the back of your PC.");
 				textview.setLayoutParams(new LinearLayout.LayoutParams(
 						LayoutParams.MATCH_PARENT, LayoutParams.WRAP_CONTENT));
 				llInner.addView(textview);
@@ -790,7 +790,7 @@ public class ViewPagerActivity extends FragmentActivity {
 
 				textview = new TextView(getActivity());
 				textview.setTextColor(Color.BLACK);
-				textview.setText("Plug the other end of the cable into the audio video PC1 port in the cabinet");
+				textview.setText("Plug the other end of the cable into the audio video PC1 port in the cabinet.");
 				textview.setLayoutParams(new LinearLayout.LayoutParams(
 						LayoutParams.MATCH_PARENT, LayoutParams.WRAP_CONTENT));
 				llInner.addView(textview);
@@ -807,7 +807,7 @@ public class ViewPagerActivity extends FragmentActivity {
 
 				textview = new TextView(getActivity());
 				textview.setTextColor(Color.BLACK);
-				textview.setText("Press the ON button on the video cabinet, then press the COMPUTER button");
+				textview.setText("Press the ON button on the video cabinet, then press the COMPUTER button.");
 				textview.setLayoutParams(new LinearLayout.LayoutParams(
 						LayoutParams.MATCH_PARENT, LayoutParams.WRAP_CONTENT));
 				llInner.addView(textview);
@@ -1293,7 +1293,7 @@ public class ViewPagerActivity extends FragmentActivity {
 				textview = new TextView(getActivity());
 				textview.setTextColor(Color.BLACK);
 				textview.setText("Equipment information screens tell you about the specifics of that "
-						+ "piece of equipment.   You can als find helpful info on how to use it, "
+						+ "piece of equipment.   You can alss find helpful info on how to use it, "
 						+ "as well as submit any bugs you may find.");
 				textview.setLayoutParams(new LinearLayout.LayoutParams(
 						LayoutParams.MATCH_PARENT, LayoutParams.WRAP_CONTENT));
@@ -1301,7 +1301,7 @@ public class ViewPagerActivity extends FragmentActivity {
 
 				// TEMP HACKS TO EXPERIMNET WITH HTML IN TEXVIEW...
 				// >>>>>>>>>>>>>
-				textview = new TextView(getActivity());
+				/*textview = new TextView(getActivity());
 				textview.setTextColor(Color.BLACK);
 				textview.setLayoutParams(new LinearLayout.LayoutParams(
 						LayoutParams.MATCH_PARENT, LayoutParams.WRAP_CONTENT));
@@ -1353,7 +1353,7 @@ public class ViewPagerActivity extends FragmentActivity {
 						LayoutParams.MATCH_PARENT, LayoutParams.WRAP_CONTENT));
 				textview.setText("412-555-1212");
 				Linkify.addLinks(textview, Linkify.PHONE_NUMBERS);
-				llInner.addView(textview);
+				llInner.addView(textview);*/
 
 				// (Html.fromHtml(
 				// / <<<<<<<<<<<<<
@@ -1380,7 +1380,7 @@ public class ViewPagerActivity extends FragmentActivity {
 				textview.setTextColor(Color.BLACK);
 				textview.setText("Classroom information screens tell you about a specific classroom, "
 						+ "including the equipment available, and how many seats there are in "
-						+ "the class, in addition to reporting nay problems.");
+						+ "the class, in addition to reporting any problems.");
 				textview.setLayoutParams(new LinearLayout.LayoutParams(
 						LayoutParams.MATCH_PARENT, LayoutParams.WRAP_CONTENT));
 				llInner.addView(textview);
@@ -1428,7 +1428,7 @@ public class ViewPagerActivity extends FragmentActivity {
 
 				textview = new TextView(getActivity());
 				textview.setTextColor(Color.BLACK);
-				textview.setText("The Submit Bug Report button allows you to notify CIDDE about faulty equipment");
+				textview.setText("The Submit Bug Report button allows you to notify CIDDE about faulty equipment.");
 				textview.setLayoutParams(new LinearLayout.LayoutParams(
 						LayoutParams.MATCH_PARENT, LayoutParams.WRAP_CONTENT));
 				llInner.addView(textview);
@@ -1492,7 +1492,7 @@ public class ViewPagerActivity extends FragmentActivity {
 
 				textview = new TextView(getActivity());
 				textview.setTextColor(Color.BLACK);
-				textview.setText("The How To stores any useful tutorials which cover a wide variety of subjects");
+				textview.setText("The How To stores any useful tutorials which cover a wide variety of subjects.");
 				textview.setLayoutParams(new LinearLayout.LayoutParams(
 						LayoutParams.MATCH_PARENT, LayoutParams.WRAP_CONTENT));
 				llInner.addView(textview);
