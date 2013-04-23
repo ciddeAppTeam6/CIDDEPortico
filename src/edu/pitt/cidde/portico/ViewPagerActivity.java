@@ -2315,9 +2315,10 @@ public class ViewPagerActivity extends FragmentActivity {
 			case 1:
 				textview = new TextView(getActivity());
 				textview.setTextColor(Color.BLACK);
-				textview.setText(Html.fromHtml("� Windows XP Users should go to <b>Windows XP - Step 1</b> page (1 swipe). " +
-						"<br /><br />� Windows Vista and Windows 7 Users should go to <b>Windows Vista/7 - Step 1</b> page " +
-						"(4 swipes). <br /><br />� Windows 8 Users should go to <b>Windows 8 - Step 1</b> page (7 swipes)."));
+				textview.setText(Html.fromHtml("&#8226; Windows XP Users should go to the <b>\"Windows XP - Step 1\"</b> page " +
+						"(1 swipe). <br /><br />&#8226; Windows Vista and Windows 7 Users should go to the <b>\"Windows Vista/7 - " +
+						"Step 1\"</b> page (4 swipes). <br /><br />&#8226; Windows 8 Users should go to the <b>\"Windows 8 - " +
+						"Step 1\"</b> page (7 swipes)."));
 				textview.setLayoutParams(new LinearLayout.LayoutParams(
 						LayoutParams.MATCH_PARENT, LayoutParams.WRAP_CONTENT));
 				llInner.addView(textview);
