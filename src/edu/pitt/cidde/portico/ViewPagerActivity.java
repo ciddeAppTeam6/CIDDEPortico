@@ -287,7 +287,7 @@ public class ViewPagerActivity extends FragmentActivity {
 				// How to use this app tutorial
 				else if (parentIntentViewType == 1253) 
 				{
-					whatPageCnt = 1;
+					whatPageCnt = 8;
 				}
 				
 				//How to connect to PittNet (Windows)
@@ -363,15 +363,15 @@ public class ViewPagerActivity extends FragmentActivity {
 					return "Who Knows?"; // return null;
 				} 
 				
-				else if (parentIntentViewType == 1251) // show powerpoint
+				else if (parentIntentViewType == 1251) // show powerpoint troubleshoo
 															// troubleshooting
 															// [TS1]
 				{
 					Log.i("DEBUG", "getPagetitle");
-					switch (position) {
-					case 0:
+					/*switch (position) {
+					case 0:*/
 						return "TroubleShooting...";
-					case 1:
+					/*case 1:
 						return "Page 1";
 					case 2:
 						return "Page 2";
@@ -384,17 +384,17 @@ public class ViewPagerActivity extends FragmentActivity {
 					case 6:
 						return "End of Tutorial";
 					}
-					return "Who Knows?"; // return null;
+					return "Who Knows?"; // return null;*/
 				} 
 				
 				else if (parentIntentViewType == 1252) // How to present a
 															// powerpoint [H2]
 				{
 					Log.i("DEBUG", "getPagetitle");
-					switch (position) {
-					case 0:
-						return "How To....";
-					case 1:
+					/*switch (position) {
+					case 0:*/
+						return "How To present a powerpoint";
+					/*case 1:
 						return "Page 1";
 					case 2:
 						return "Page 2";
@@ -407,7 +407,7 @@ public class ViewPagerActivity extends FragmentActivity {
 					case 6:
 						return "End of Tutorial";
 					}
-					return "Who Knows?"; // return null;
+					return "Who Knows?"; // return null;*/
 				} 
 				
 				else if (parentIntentViewType == 1253) // How to use this app tutorial
@@ -415,20 +415,18 @@ public class ViewPagerActivity extends FragmentActivity {
 					Log.i("DEBUG", "getPagetitle");
 					switch (position) {
 					case 0:
-						return "How To....";
-					case 1:
 						return "Page 1";
-					case 2:
+					case 1:
 						return "Page 2";
-					case 3:
+					case 2:
 						return "Page 3";
-					case 4:
+					case 3:
 						return "Page 4";
-					case 5:
+					case 4:
 						return "Page 5";
-					case 6:
+					case 5:
 						return "Page 6";
-					case 7:
+					case 6:
 						return "End of Tutorial";
 					}
 					return "Who Knows?"; // return null;
@@ -616,6 +614,7 @@ public class ViewPagerActivity extends FragmentActivity {
 			// -----------
 			TextView textview;
 			textview = new TextView(getActivity());
+			textview.setTextColor(Color.BLACK);
 			textview.setText("HOW TO: Connect a PC to the Projector");
 			textview.setLayoutParams(new LinearLayout.LayoutParams(
 					LayoutParams.MATCH_PARENT, LayoutParams.WRAP_CONTENT));
@@ -626,6 +625,7 @@ public class ViewPagerActivity extends FragmentActivity {
 			switch (whatPage) {
 			case 0:
 				textview = new TextView(getActivity());
+				textview.setTextColor(Color.BLACK);
 				textview.setText("EVEN NUMBERED PAGE of future XML viewer");
 				textview.setLayoutParams(new LinearLayout.LayoutParams(
 						LayoutParams.MATCH_PARENT, LayoutParams.WRAP_CONTENT));
@@ -634,6 +634,7 @@ public class ViewPagerActivity extends FragmentActivity {
 				break;
 			case 1:
 				textview = new TextView(getActivity());
+				textview.setTextColor(Color.BLACK);
 				textview.setText("ODD NUMBERED PAGE of future XML viewer");
 				textview.setLayoutParams(new LinearLayout.LayoutParams(
 						LayoutParams.MATCH_PARENT, LayoutParams.WRAP_CONTENT));
@@ -641,6 +642,7 @@ public class ViewPagerActivity extends FragmentActivity {
 				break;
 			default:
 				textview = new TextView(getActivity());
+				textview.setTextColor(Color.BLACK);
 				textview.setText("what page is this? of future XML viewer");
 				textview.setLayoutParams(new LinearLayout.LayoutParams(
 						LayoutParams.MATCH_PARENT, LayoutParams.WRAP_CONTENT));
@@ -753,6 +755,7 @@ public class ViewPagerActivity extends FragmentActivity {
 				llInner.addView(imgView);
 
 				textview = new TextView(getActivity());
+				textview.setTextColor(Color.BLACK);
 				textview.setText("Locate the VGA cable.  It is the one that has 15 pins.");
 				textview.setLayoutParams(new LinearLayout.LayoutParams(
 						LayoutParams.MATCH_PARENT, LayoutParams.WRAP_CONTENT));
@@ -769,6 +772,7 @@ public class ViewPagerActivity extends FragmentActivity {
 				llInner.addView(imgView);
 
 				textview = new TextView(getActivity());
+				textview.setTextColor(Color.BLACK);
 				textview.setText("Plug one end of the cable into the back of your PC");
 				textview.setLayoutParams(new LinearLayout.LayoutParams(
 						LayoutParams.MATCH_PARENT, LayoutParams.WRAP_CONTENT));
@@ -785,6 +789,7 @@ public class ViewPagerActivity extends FragmentActivity {
 				llInner.addView(imgView);
 
 				textview = new TextView(getActivity());
+				textview.setTextColor(Color.BLACK);
 				textview.setText("Plug the other end of the cable into the audio video PC1 port in the cabinet");
 				textview.setLayoutParams(new LinearLayout.LayoutParams(
 						LayoutParams.MATCH_PARENT, LayoutParams.WRAP_CONTENT));
@@ -801,6 +806,7 @@ public class ViewPagerActivity extends FragmentActivity {
 				llInner.addView(imgView);
 
 				textview = new TextView(getActivity());
+				textview.setTextColor(Color.BLACK);
 				textview.setText("Press the ON button on the video cabinet, then press the COMPUTER button");
 				textview.setLayoutParams(new LinearLayout.LayoutParams(
 						LayoutParams.MATCH_PARENT, LayoutParams.WRAP_CONTENT));
@@ -888,6 +894,7 @@ public class ViewPagerActivity extends FragmentActivity {
 			TextView textview;
 
 			textview = new TextView(getActivity());
+			textview.setTextColor(Color.BLACK);
 			textview.setLayoutParams(new LinearLayout.LayoutParams(
 					LayoutParams.MATCH_PARENT, LayoutParams.WRAP_CONTENT));
 			textview.setText(Html
@@ -895,6 +902,7 @@ public class ViewPagerActivity extends FragmentActivity {
 			llInner.addView(textview);
 
 			textview = new TextView(getActivity());
+			textview.setTextColor(Color.BLACK);
 			textview.setLayoutParams(new LinearLayout.LayoutParams(
 					LayoutParams.MATCH_PARENT, LayoutParams.WRAP_CONTENT));
 			textview.setText(Html
@@ -902,6 +910,7 @@ public class ViewPagerActivity extends FragmentActivity {
 			llInner.addView(textview);
 
 			textview = new TextView(getActivity());
+			textview.setTextColor(Color.BLACK);
 			textview.setLayoutParams(new LinearLayout.LayoutParams(
 					LayoutParams.MATCH_PARENT, LayoutParams.WRAP_CONTENT));
 			textview.setText(Html
@@ -909,6 +918,7 @@ public class ViewPagerActivity extends FragmentActivity {
 			llInner.addView(textview);
 
 			textview = new TextView(getActivity());
+			textview.setTextColor(Color.BLACK);
 			textview.setLayoutParams(new LinearLayout.LayoutParams(
 					LayoutParams.MATCH_PARENT, LayoutParams.WRAP_CONTENT));
 			textview.setText(Html
@@ -916,6 +926,7 @@ public class ViewPagerActivity extends FragmentActivity {
 			llInner.addView(textview);
 
 			textview = new TextView(getActivity());
+			textview.setTextColor(Color.BLACK);
 			textview.setLayoutParams(new LinearLayout.LayoutParams(
 					LayoutParams.MATCH_PARENT, LayoutParams.WRAP_CONTENT));
 			textview.setText(Html.fromHtml("<b>4 . . .</b>"));
@@ -998,6 +1009,7 @@ public class ViewPagerActivity extends FragmentActivity {
 			Button button;
 
 			textview = new TextView(getActivity());
+			textview.setTextColor(Color.BLACK);
 			textview.setLayoutParams(new LinearLayout.LayoutParams(
 					LayoutParams.MATCH_PARENT, LayoutParams.WRAP_CONTENT));
 			textview.setText(Html
@@ -1005,6 +1017,7 @@ public class ViewPagerActivity extends FragmentActivity {
 			llInner.addView(textview);
 
 			textview = new TextView(getActivity());
+			textview.setTextColor(Color.BLACK);
 			textview.setLayoutParams(new LinearLayout.LayoutParams(
 					LayoutParams.MATCH_PARENT, LayoutParams.WRAP_CONTENT));
 			textview.setText(Html
@@ -1013,12 +1026,14 @@ public class ViewPagerActivity extends FragmentActivity {
 			llInner.addView(textview);
 
 			textview = new TextView(getActivity());
+			textview.setTextColor(Color.BLACK);
 			textview.setLayoutParams(new LinearLayout.LayoutParams(
 					LayoutParams.MATCH_PARENT, LayoutParams.WRAP_CONTENT));
 			textview.setText(Html.fromHtml(" "));
 			llInner.addView(textview);
 
 			textview = new TextView(getActivity());
+			textview.setTextColor(Color.BLACK);
 			textview.setLayoutParams(new LinearLayout.LayoutParams(
 					LayoutParams.MATCH_PARENT, LayoutParams.WRAP_CONTENT));
 			textview.setText(Html
@@ -1026,6 +1041,7 @@ public class ViewPagerActivity extends FragmentActivity {
 			llInner.addView(textview);
 
 			textview = new TextView(getActivity());
+			textview.setTextColor(Color.BLACK);
 			textview.setLayoutParams(new LinearLayout.LayoutParams(
 					LayoutParams.MATCH_PARENT, LayoutParams.WRAP_CONTENT));
 			textview.setText(Html
@@ -1033,6 +1049,7 @@ public class ViewPagerActivity extends FragmentActivity {
 			llInner.addView(textview);
 
 			textview = new TextView(getActivity());
+			textview.setTextColor(Color.BLACK);
 			textview.setLayoutParams(new LinearLayout.LayoutParams(
 					LayoutParams.MATCH_PARENT, LayoutParams.WRAP_CONTENT));
 			textview.setText(Html.fromHtml("<ul><b>Walkthroughs:</b></ul>"));
@@ -1144,6 +1161,7 @@ public class ViewPagerActivity extends FragmentActivity {
 			Button button;
 			ImageView imgView;
 			textview = new TextView(getActivity());
+			textview.setTextColor(Color.BLACK);
 
 			if (getArguments().getInt(ARG_SECTION_NUMBER) == 1)
 				textview.setText("WELCOME to CIDDE Help");
@@ -1156,6 +1174,7 @@ public class ViewPagerActivity extends FragmentActivity {
 			switch (getArguments().getInt(ARG_SECTION_NUMBER)) {
 			case 1:
 				textview = new TextView(getActivity());
+				textview.setTextColor(Color.BLACK);
 				textview.setText("Use these buttons to scan a QR code, or to find "
 						+ " information about equipment and rooms:");
 				textview.setLayoutParams(new LinearLayout.LayoutParams(
@@ -1197,12 +1216,14 @@ public class ViewPagerActivity extends FragmentActivity {
 				llInner.addView(imgView);
 
 				textview = new TextView(getActivity());
+				textview.setTextColor(Color.BLACK);
 				textview.setText(" \\/ you can scroll down to navigate too... \\/");
 				textview.setLayoutParams(new LinearLayout.LayoutParams(
 						LayoutParams.MATCH_PARENT, LayoutParams.WRAP_CONTENT));
 				llInner.addView(textview);
 
 				textview = new TextView(getActivity());
+				textview.setTextColor(Color.BLACK);
 				textview.setText("1...");
 				textview.setTextSize(TypedValue.COMPLEX_UNIT_SP, 24);
 				textview.setLayoutParams(new LinearLayout.LayoutParams(
@@ -1210,6 +1231,7 @@ public class ViewPagerActivity extends FragmentActivity {
 				llInner.addView(textview);
 
 				textview = new TextView(getActivity());
+				textview.setTextColor(Color.BLACK);
 				textview.setText("2...");
 				textview.setLayoutParams(new LinearLayout.LayoutParams(
 						LayoutParams.MATCH_PARENT, LayoutParams.WRAP_CONTENT));
@@ -1217,6 +1239,7 @@ public class ViewPagerActivity extends FragmentActivity {
 				llInner.addView(textview);
 
 				textview = new TextView(getActivity());
+				textview.setTextColor(Color.BLACK);
 				textview.setText("3...");
 				textview.setLayoutParams(new LinearLayout.LayoutParams(
 						LayoutParams.MATCH_PARENT, LayoutParams.WRAP_CONTENT));
@@ -1224,6 +1247,7 @@ public class ViewPagerActivity extends FragmentActivity {
 				llInner.addView(textview);
 
 				textview = new TextView(getActivity());
+				textview.setTextColor(Color.BLACK);
 				textview.setText("4...");
 				textview.setLayoutParams(new LinearLayout.LayoutParams(
 						LayoutParams.MATCH_PARENT, LayoutParams.WRAP_CONTENT));
@@ -1240,7 +1264,8 @@ public class ViewPagerActivity extends FragmentActivity {
 				llInner.addView(imgView);
 
 				textview = new TextView(getActivity());
-				textview.setText("<-- (or swipe sidewals to navigate) -->");
+				textview.setTextColor(Color.BLACK);
+				textview.setText("<-- (or swipe sideways to navigate) -->");
 				textview.setTypeface(Typeface.DEFAULT_BOLD);
 				textview.setGravity(Gravity.CENTER);
 				textview.setLayoutParams(new LinearLayout.LayoutParams(
@@ -1251,6 +1276,7 @@ public class ViewPagerActivity extends FragmentActivity {
 
 			case 2:
 				textview = new TextView(getActivity());
+				textview.setTextColor(Color.BLACK);
 				textview.setText("Information Screens:");
 				textview.setLayoutParams(new LinearLayout.LayoutParams(
 						LayoutParams.MATCH_PARENT, LayoutParams.WRAP_CONTENT));
@@ -1265,6 +1291,7 @@ public class ViewPagerActivity extends FragmentActivity {
 				llInner.addView(imgView);
 
 				textview = new TextView(getActivity());
+				textview.setTextColor(Color.BLACK);
 				textview.setText("Equipment information screens tell you about the specifics of that "
 						+ "piece of equipment.   You can als find helpful info on how to use it, "
 						+ "as well as submit any bugs you may find.");
@@ -1275,6 +1302,7 @@ public class ViewPagerActivity extends FragmentActivity {
 				// TEMP HACKS TO EXPERIMNET WITH HTML IN TEXVIEW...
 				// >>>>>>>>>>>>>
 				textview = new TextView(getActivity());
+				textview.setTextColor(Color.BLACK);
 				textview.setLayoutParams(new LinearLayout.LayoutParams(
 						LayoutParams.MATCH_PARENT, LayoutParams.WRAP_CONTENT));
 				// textview.setText("<ul><li><code>&lt;b></code> for <b>bold</b> text.</li>"
@@ -1288,6 +1316,7 @@ public class ViewPagerActivity extends FragmentActivity {
 				llInner.addView(textview);
 
 				textview = new TextView(getActivity());
+				textview.setTextColor(Color.BLACK);
 				textview.setLayoutParams(new LinearLayout.LayoutParams(
 						LayoutParams.MATCH_PARENT, LayoutParams.WRAP_CONTENT));
 				textview.setText(Html
@@ -1295,6 +1324,7 @@ public class ViewPagerActivity extends FragmentActivity {
 				llInner.addView(textview);
 
 				textview = new TextView(getActivity());
+				textview.setTextColor(Color.BLACK);
 				textview.setLayoutParams(new LinearLayout.LayoutParams(
 						LayoutParams.MATCH_PARENT, LayoutParams.WRAP_CONTENT));
 				textview.setText(Html
@@ -1302,6 +1332,7 @@ public class ViewPagerActivity extends FragmentActivity {
 				llInner.addView(textview);
 
 				textview = new TextView(getActivity());
+				textview.setTextColor(Color.BLACK);
 				textview.setLayoutParams(new LinearLayout.LayoutParams(
 						LayoutParams.MATCH_PARENT, LayoutParams.WRAP_CONTENT));
 				textview.setText(Html
@@ -1317,6 +1348,7 @@ public class ViewPagerActivity extends FragmentActivity {
 
 				// textview.myPhone = (TextView) findViewById(R.id.my_web_site);
 				textview = new TextView(getActivity());
+				textview.setTextColor(Color.BLACK);
 				textview.setLayoutParams(new LinearLayout.LayoutParams(
 						LayoutParams.MATCH_PARENT, LayoutParams.WRAP_CONTENT));
 				textview.setText("412-555-1212");
@@ -1331,6 +1363,7 @@ public class ViewPagerActivity extends FragmentActivity {
 			case 3:
 				textview = new TextView(getActivity());
 				textview.setText("Information Screens:");
+				textview.setTextColor(Color.BLACK);
 				textview.setLayoutParams(new LinearLayout.LayoutParams(
 						LayoutParams.MATCH_PARENT, LayoutParams.WRAP_CONTENT));
 				llInner.addView(textview);
@@ -1344,6 +1377,7 @@ public class ViewPagerActivity extends FragmentActivity {
 				llInner.addView(imgView);
 
 				textview = new TextView(getActivity());
+				textview.setTextColor(Color.BLACK);
 				textview.setText("Classroom information screens tell you about a specific classroom, "
 						+ "including the equipment available, and how many seats there are in "
 						+ "the class, in addition to reporting nay problems.");
@@ -1354,6 +1388,7 @@ public class ViewPagerActivity extends FragmentActivity {
 
 			case 4:
 				textview = new TextView(getActivity());
+				textview.setTextColor(Color.BLACK);
 				textview.setText("Help Directory:");
 				textview.setLayoutParams(new LinearLayout.LayoutParams(
 						LayoutParams.MATCH_PARENT, LayoutParams.WRAP_CONTENT));
@@ -1368,6 +1403,7 @@ public class ViewPagerActivity extends FragmentActivity {
 				llInner.addView(imgView);
 
 				textview = new TextView(getActivity());
+				textview.setTextColor(Color.BLACK);
 				textview.setText("The help directory lists useful contact information, as well as informative links.");
 				textview.setLayoutParams(new LinearLayout.LayoutParams(
 						LayoutParams.MATCH_PARENT, LayoutParams.WRAP_CONTENT));
@@ -1376,6 +1412,7 @@ public class ViewPagerActivity extends FragmentActivity {
 
 			case 5:
 				textview = new TextView(getActivity());
+				textview.setTextColor(Color.BLACK);
 				textview.setText("Submitting Bug Reports:");
 				textview.setLayoutParams(new LinearLayout.LayoutParams(
 						LayoutParams.MATCH_PARENT, LayoutParams.WRAP_CONTENT));
@@ -1390,6 +1427,7 @@ public class ViewPagerActivity extends FragmentActivity {
 				llInner.addView(imgView);
 
 				textview = new TextView(getActivity());
+				textview.setTextColor(Color.BLACK);
 				textview.setText("The Submit Bug Report button allows you to notify CIDDE about faulty equipment");
 				textview.setLayoutParams(new LinearLayout.LayoutParams(
 						LayoutParams.MATCH_PARENT, LayoutParams.WRAP_CONTENT));
@@ -1398,13 +1436,15 @@ public class ViewPagerActivity extends FragmentActivity {
 
 			case 6:
 				textview = new TextView(getActivity());
+				textview.setTextColor(Color.BLACK);
 				textview.setText("Submitting Bug Reports:");
 				textview.setLayoutParams(new LinearLayout.LayoutParams(
 						LayoutParams.MATCH_PARENT, LayoutParams.WRAP_CONTENT));
 				llInner.addView(textview);
 
 				textview = new TextView(getActivity());
-				textview.setText("The faulty equipment information can be entered by browisng or by scanning a QR code here...");
+				textview.setTextColor(Color.BLACK);
+				textview.setText("The faulty equipment information can be entered by browsing or by scanning a QR code here...");
 				textview.setLayoutParams(new LinearLayout.LayoutParams(
 						LayoutParams.MATCH_PARENT, LayoutParams.WRAP_CONTENT));
 				llInner.addView(textview);
@@ -1418,7 +1458,8 @@ public class ViewPagerActivity extends FragmentActivity {
 				llInner.addView(imgView);
 
 				textview = new TextView(getActivity());
-				textview.setText("Bug reporting informatoin can be entered in here...");
+				textview.setTextColor(Color.BLACK);
+				textview.setText("Bug reporting information can be entered in here...");
 				textview.setLayoutParams(new LinearLayout.LayoutParams(
 						LayoutParams.MATCH_PARENT, LayoutParams.WRAP_CONTENT));
 				llInner.addView(textview);
@@ -1435,6 +1476,7 @@ public class ViewPagerActivity extends FragmentActivity {
 
 			case 7:
 				textview = new TextView(getActivity());
+				textview.setTextColor(Color.BLACK);
 				textview.setText("How To Tutorials:");
 				textview.setLayoutParams(new LinearLayout.LayoutParams(
 						LayoutParams.MATCH_PARENT, LayoutParams.WRAP_CONTENT));
@@ -1449,12 +1491,14 @@ public class ViewPagerActivity extends FragmentActivity {
 				llInner.addView(imgView);
 
 				textview = new TextView(getActivity());
-				textview.setText("The How To stores any useful tutorials which cover a whide variety of subjects");
+				textview.setTextColor(Color.BLACK);
+				textview.setText("The How To stores any useful tutorials which cover a wide variety of subjects");
 				textview.setLayoutParams(new LinearLayout.LayoutParams(
 						LayoutParams.MATCH_PARENT, LayoutParams.WRAP_CONTENT));
 				llInner.addView(textview);
 
 				textview = new TextView(getActivity());
+				textview.setTextColor(Color.BLACK);
 				textview.setText("<<End of Tutorial>>");
 				textview.setLayoutParams(new LinearLayout.LayoutParams(
 						LayoutParams.MATCH_PARENT, LayoutParams.WRAP_CONTENT));
@@ -1565,6 +1609,7 @@ public class ViewPagerActivity extends FragmentActivity {
 				llInner.addView(imgView);
 
 				textview = new TextView(getActivity());
+				textview.setTextColor(Color.BLACK);
 				textview.setText(Html.fromHtml("Click the <b>Network Connection</b> icon from the task bar."));
 				textview.setLayoutParams(new LinearLayout.LayoutParams(
 						LayoutParams.MATCH_PARENT, LayoutParams.WRAP_CONTENT));
@@ -1581,6 +1626,7 @@ public class ViewPagerActivity extends FragmentActivity {
 				llInner.addView(imgView);
 
 				textview = new TextView(getActivity());
+				textview.setTextColor(Color.BLACK);
 				textview.setText(Html.fromHtml("Select <b>SETUP-PITT-WIFI</b> from the list of available networks and " +
 						"click <b>Connect</b>."));
 				textview.setLayoutParams(new LinearLayout.LayoutParams(
@@ -1598,6 +1644,7 @@ public class ViewPagerActivity extends FragmentActivity {
 				llInner.addView(imgView);
 
 				textview = new TextView(getActivity());
+				textview.setTextColor(Color.BLACK);
 				textview.setText(Html.fromHtml("An automated network configuration tool similar to that shown above will " +
 						"display. Review and accept the terms of the license agreement, then click <b>Start</b>. " +
 						"<br /><br /><b>Note:</b> If you are using Windows 8, you may be prompted to manually download the " +
@@ -1617,6 +1664,7 @@ public class ViewPagerActivity extends FragmentActivity {
 				llInner.addView(imgView);
 
 				textview = new TextView(getActivity());
+				textview.setTextColor(Color.BLACK);
 				textview.setText(Html.fromHtml("Enter your University Computing Account username and password and " +
 						"click <b>Continue</b>. Then complete the installation wizard."));
 				textview.setLayoutParams(new LinearLayout.LayoutParams(
@@ -1635,6 +1683,7 @@ public class ViewPagerActivity extends FragmentActivity {
 				llInner.addView(imgView);
 
 				textview = new TextView(getActivity());
+				textview.setTextColor(Color.BLACK);
 				textview.setText("A screen similar to the one above will display indicating that you are successfully " +
 						"connected to Wireless PittNet. The next time you connect, just select Wireless PittNet from " +
 						"the list of available networks.");
@@ -1728,6 +1777,7 @@ public class ViewPagerActivity extends FragmentActivity {
 				llInner.addView(imgView);
 
 				textview = new TextView(getActivity());
+				textview.setTextColor(Color.BLACK);
 				textview.setText(Html.fromHtml("Click the <b>AirPort</b> status menu and select <b>SETUP-PITT-WIFI</b>."));
 				textview.setLayoutParams(new LinearLayout.LayoutParams(
 						LayoutParams.MATCH_PARENT, LayoutParams.WRAP_CONTENT));
@@ -1744,6 +1794,7 @@ public class ViewPagerActivity extends FragmentActivity {
 				llInner.addView(imgView);
 
 				textview = new TextView(getActivity());
+				textview.setTextColor(Color.BLACK);
 				textview.setText(Html.fromHtml("An automated network configuration tool similar to that shown above will " +
 						"display. Review and accept the terms of the license agreement, then click <b>Start</b>. " +
 						"<br /><br /><b>Note:</b> If you are using Windows 8, you may be prompted to manually download the " +
@@ -1764,6 +1815,7 @@ public class ViewPagerActivity extends FragmentActivity {
 				llInner.addView(imgView);
 
 				textview = new TextView(getActivity());
+				textview.setTextColor(Color.BLACK);
 				textview.setText(Html.fromHtml("Enter your University Computing Account username and password and " +
 						"click <b>Continue</b>. Then complete the installation wizard."));
 				textview.setLayoutParams(new LinearLayout.LayoutParams(
@@ -1782,6 +1834,7 @@ public class ViewPagerActivity extends FragmentActivity {
 				llInner.addView(imgView);
 
 				textview = new TextView(getActivity());
+				textview.setTextColor(Color.BLACK);
 				textview.setText("A screen similar to the one above will display indicating that you are successfully " +
 						"connected to Wireless PittNet. The next time you connect, just select Wireless PittNet from " +
 						"the list of available networks.");
@@ -1880,6 +1933,7 @@ public class ViewPagerActivity extends FragmentActivity {
 				llInner.addView(imgView);
 
 				textview = new TextView(getActivity());
+				textview.setTextColor(Color.BLACK);
 				textview.setText(Html.fromHtml("Open a Web browser to <u>https://my.pitt.edu/portal/server.pt/community/" +
 						"software_downloads/872</u> and log in using your University Computer Account username and " +
 						"password."));
@@ -1898,6 +1952,7 @@ public class ViewPagerActivity extends FragmentActivity {
 				llInner.addView(imgView);
 
 				textview = new TextView(getActivity());
+				textview.setTextColor(Color.BLACK);
 				textview.setText(Html.fromHtml("Click the <b>Software Download Service Login</b> link."));
 				textview.setLayoutParams(new LinearLayout.LayoutParams(
 						LayoutParams.MATCH_PARENT, LayoutParams.WRAP_CONTENT));
@@ -1914,6 +1969,7 @@ public class ViewPagerActivity extends FragmentActivity {
 				llInner.addView(imgView);
 
 				textview = new TextView(getActivity());
+				textview.setTextColor(Color.BLACK);
 				textview.setText(Html.fromHtml("Select <b>University of Pittsburgh</b> from the <b>Choose Vendor</b> " +
 						"drop-down menu."));
 				textview.setLayoutParams(new LinearLayout.LayoutParams(
@@ -1931,6 +1987,7 @@ public class ViewPagerActivity extends FragmentActivity {
 				llInner.addView(imgView);
 
 				textview = new TextView(getActivity());
+				textview.setTextColor(Color.BLACK);
 				textview.setText(Html.fromHtml("A list of matching results will display. Click the <b>Self-Service " +
 						"Printing</b> link for the version of the download that you need."));
 				textview.setLayoutParams(new LinearLayout.LayoutParams(
@@ -1949,9 +2006,10 @@ public class ViewPagerActivity extends FragmentActivity {
 				llInner.addView(imgView);
 
 				textview = new TextView(getActivity());
+				textview.setTextColor(Color.BLACK);
 				textview.setText(Html.fromHtml("Click the <b>Download all Files</b> button, then select a location to " +
 						"save the file to on your computer.<br /><br /><b>Note:</b> You may be prompted to install <b>" +
-						"Pitt Software Download Service Interface – Provided by Akamai</b> at this point. Download and " +
+						"Pitt Software Download Service Interface ï¿½ Provided by Akamai</b> at this point. Download and " +
 						"install it to continue."));
 				textview.setLayoutParams(new LinearLayout.LayoutParams(
 						LayoutParams.MATCH_PARENT, LayoutParams.WRAP_CONTENT));
@@ -1969,6 +2027,7 @@ public class ViewPagerActivity extends FragmentActivity {
 				llInner.addView(imgView);
 
 				textview = new TextView(getActivity());
+				textview.setTextColor(Color.BLACK);
 				textview.setText(Html.fromHtml("To start the installation, double-click the downloaded Pitt Self-Service " +
 						"Printing file."));
 				textview.setLayoutParams(new LinearLayout.LayoutParams(
@@ -1987,6 +2046,7 @@ public class ViewPagerActivity extends FragmentActivity {
 				llInner.addView(imgView);
 
 				textview = new TextView(getActivity());
+				textview.setTextColor(Color.BLACK);
 				textview.setText(Html.fromHtml("Click the <b>Install</b> button to begin the installation. Follow the " +
 						"prompts to complete the installation process."));
 				textview.setLayoutParams(new LinearLayout.LayoutParams(
@@ -2005,6 +2065,7 @@ public class ViewPagerActivity extends FragmentActivity {
 				llInner.addView(imgView);
 
 				textview = new TextView(getActivity());
+				textview.setTextColor(Color.BLACK);
 				textview.setText(Html.fromHtml("The Self-Service Printing software has now been installed on your " +
 						"computer. To use the service, follow the instructions in the help sheet titled <i>Using the " +
 						"Self-Service Printing Service</i>.<br /><br /><b>Note:</b> If you see a security warning, you " +
@@ -2107,6 +2168,7 @@ public class ViewPagerActivity extends FragmentActivity {
 				llInner.addView(imgView);
 
 				textview = new TextView(getActivity());
+				textview.setTextColor(Color.BLACK);
 				textview.setText(Html.fromHtml("Click the <b>AirPort</b> status menu and select <b>SETUP-PITT-WIFI</b>."));
 				textview.setLayoutParams(new LinearLayout.LayoutParams(
 						LayoutParams.MATCH_PARENT, LayoutParams.WRAP_CONTENT));
@@ -2123,6 +2185,7 @@ public class ViewPagerActivity extends FragmentActivity {
 				llInner.addView(imgView);
 
 				textview = new TextView(getActivity());
+				textview.setTextColor(Color.BLACK);
 				textview.setText(Html.fromHtml("An automated network configuration tool similar to that shown above will " +
 						"display. Review and accept the terms of the license agreement, then click <b>Start</b>. " +
 						"<br /><br /><b>Note:</b> If you are using Windows 8, you may be prompted to manually download the " +
@@ -2143,6 +2206,7 @@ public class ViewPagerActivity extends FragmentActivity {
 				llInner.addView(imgView);
 
 				textview = new TextView(getActivity());
+				textview.setTextColor(Color.BLACK);
 				textview.setText(Html.fromHtml("Enter your University Computing Account username and password and " +
 						"click <b>Continue</b>. Then complete the installation wizard."));
 				textview.setLayoutParams(new LinearLayout.LayoutParams(
@@ -2161,6 +2225,7 @@ public class ViewPagerActivity extends FragmentActivity {
 				llInner.addView(imgView);
 
 				textview = new TextView(getActivity());
+				textview.setTextColor(Color.BLACK);
 				textview.setText("A screen similar to the one above will display indicating that you are successfully " +
 						"connected to Wireless PittNet. The next time you connect, just select Wireless PittNet from " +
 						"the list of available networks.");
@@ -2249,9 +2314,10 @@ public class ViewPagerActivity extends FragmentActivity {
 			switch (getArguments().getInt(ARG_SECTION_NUMBER)) {
 			case 1:
 				textview = new TextView(getActivity());
-				textview.setText(Html.fromHtml("• Windows XP Users should go to <b>Windows XP - Step 1</b> page (1 swipe). " +
-						"<br /><br />• Windows Vista and Windows 7 Users should go to <b>Windows Vista/7 - Step 1</b> page " +
-						"(4 swipes). <br /><br />• Windows 8 Users should go to <b>Windows 8 - Step 1</b> page (7 swipes)."));
+				textview.setTextColor(Color.BLACK);
+				textview.setText(Html.fromHtml("ï¿½ Windows XP Users should go to <b>Windows XP - Step 1</b> page (1 swipe). " +
+						"<br /><br />ï¿½ Windows Vista and Windows 7 Users should go to <b>Windows Vista/7 - Step 1</b> page " +
+						"(4 swipes). <br /><br />ï¿½ Windows 8 Users should go to <b>Windows 8 - Step 1</b> page (7 swipes)."));
 				textview.setLayoutParams(new LinearLayout.LayoutParams(
 						LayoutParams.MATCH_PARENT, LayoutParams.WRAP_CONTENT));
 				llInner.addView(textview);
@@ -2267,6 +2333,7 @@ public class ViewPagerActivity extends FragmentActivity {
 				llInner.addView(imgView);
 
 				textview = new TextView(getActivity());
+				textview.setTextColor(Color.BLACK);
 				textview.setText(Html.fromHtml("Click the <b>Start</b> button."));
 				textview.setLayoutParams(new LinearLayout.LayoutParams(
 						LayoutParams.MATCH_PARENT, LayoutParams.WRAP_CONTENT));
@@ -2283,6 +2350,7 @@ public class ViewPagerActivity extends FragmentActivity {
 				llInner.addView(imgView);
 
 				textview = new TextView(getActivity());
+				textview.setTextColor(Color.BLACK);
 				textview.setText(Html.fromHtml("Right-click <b>My Computer</b>, and then click <b>Properties</b>."));
 				textview.setLayoutParams(new LinearLayout.LayoutParams(
 						LayoutParams.MATCH_PARENT, LayoutParams.WRAP_CONTENT));
@@ -2300,6 +2368,7 @@ public class ViewPagerActivity extends FragmentActivity {
 				llInner.addView(imgView);
 
 				textview = new TextView(getActivity());
+				textview.setTextColor(Color.BLACK);
 				textview.setText(Html.fromHtml("Select the <b>General</b> tab and look at the <b>System</b> information. " +
 						"If you don't see \"x64 Edition\" listed, then you are running the 32-bit version of Windows XP. " +
 						"If \"x64 Edition\" is listed, then you are running the 64-bit version of Windows XP."));
@@ -2319,6 +2388,7 @@ public class ViewPagerActivity extends FragmentActivity {
 				llInner.addView(imgView);
 
 				textview = new TextView(getActivity());
+				textview.setTextColor(Color.BLACK);
 				textview.setText(Html.fromHtml("Click the <b>Start</b> button."));
 				textview.setLayoutParams(new LinearLayout.LayoutParams(
 						LayoutParams.MATCH_PARENT, LayoutParams.WRAP_CONTENT));
@@ -2335,6 +2405,7 @@ public class ViewPagerActivity extends FragmentActivity {
 				llInner.addView(imgView);
 
 				textview = new TextView(getActivity());
+				textview.setTextColor(Color.BLACK);
 				textview.setText(Html.fromHtml("Right-click <b>My Computer</b>, and then click <b>Properties</b>."));
 				textview.setLayoutParams(new LinearLayout.LayoutParams(
 						LayoutParams.MATCH_PARENT, LayoutParams.WRAP_CONTENT));
@@ -2352,6 +2423,7 @@ public class ViewPagerActivity extends FragmentActivity {
 				llInner.addView(imgView);
 
 				textview = new TextView(getActivity());
+				textview.setTextColor(Color.BLACK);
 				textview.setText(Html.fromHtml("Under <b>System</b>, you can view the <b>System type</b> infromation. " +
 						"This will tell you if it is a 32-bit or 64-bit computer."));
 				textview.setLayoutParams(new LinearLayout.LayoutParams(
@@ -2370,6 +2442,7 @@ public class ViewPagerActivity extends FragmentActivity {
 				llInner.addView(imgView);
 
 				textview = new TextView(getActivity());
+				textview.setTextColor(Color.BLACK);
 				textview.setText("Move the cursor over to the lower-left corner of the screen to see a Windows thumbnail tile");
 				textview.setLayoutParams(new LinearLayout.LayoutParams(
 						LayoutParams.MATCH_PARENT, LayoutParams.WRAP_CONTENT));
@@ -2386,6 +2459,7 @@ public class ViewPagerActivity extends FragmentActivity {
 				llInner.addView(imgView);
 
 				textview = new TextView(getActivity());
+				textview.setTextColor(Color.BLACK);
 				textview.setText(Html.fromHtml("Right-click the tile and select <b>System</b>"));
 				textview.setLayoutParams(new LinearLayout.LayoutParams(
 						LayoutParams.MATCH_PARENT, LayoutParams.WRAP_CONTENT));
@@ -2403,6 +2477,7 @@ public class ViewPagerActivity extends FragmentActivity {
 				llInner.addView(imgView);
 
 				textview = new TextView(getActivity());
+				textview.setTextColor(Color.BLACK);
 				textview.setText(Html.fromHtml("Under <b>System</b>, you can view the <b>System type</b> infromation. " +
 						"This will tell you if it is a 32-bit or 64-bit computer."));
 				textview.setLayoutParams(new LinearLayout.LayoutParams(
