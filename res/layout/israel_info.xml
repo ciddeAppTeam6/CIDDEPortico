@@ -77,21 +77,14 @@
                     style="?textRegular"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
-                    android:text="Number of seats: 35"
+                    android:text="Number of seats: 37"
                     tools:ignore="HardcodedText" />
 
                 <TextView
                     style="?textRegular"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
-                    android:text="What&apos;s installed:
-                    - Nothing" />
-
-                <TextView
-                    style="?textRegular"
-                    android:layout_width="fill_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Windows? Yes" />
+                    android:text="Projector Installed? No" />
             </LinearLayout>
 
             <LinearLayout
