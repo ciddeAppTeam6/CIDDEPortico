@@ -14,7 +14,9 @@
         style="?textLarge"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="Official Classroom Services/CIDDE Application"
+        android:gravity="center_horizontal"
+        android:text="@string/official_app_string"
+        android:textSize="22sp"
         tools:ignore="HardcodedText" />
 
     <!-- Buttons 1 & 2 -->

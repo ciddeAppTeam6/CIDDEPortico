@@ -1,8 +1,10 @@
 package edu.pitt.cidde.portico;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
+import android.view.MenuItem;
 
 public class CiddeGPSActivity extends Activity {
 
@@ -19,4 +21,13 @@ public class CiddeGPSActivity extends Activity {
 		return true;
 	}
 
+	// when a button in the options menu is clicked
+	@Override
+	public boolean onOptionsItemSelected(MenuItem item) {
+		// main menu intent
+		Intent mainIntent = new Intent(this, CiddeMainActivity.class);
+		startActivity(mainIntent);
+		return true;
+	} // end of onOptionsItemSelected
+	
 }

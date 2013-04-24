@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.app.Activity;
 import android.content.Intent;
 import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 
@@ -32,7 +33,7 @@ public class CiddeBrowseRooms extends Activity {
 				startActivity(classroomIntent);
 			}
 		}); // end of button
-		
+
 		final Button button116 = (Button) findViewById(R.id.italian_button);
 		button116.setOnClickListener(new View.OnClickListener() {
 			public void onClick(View v) {
@@ -68,7 +69,7 @@ public class CiddeBrowseRooms extends Activity {
 				startActivity(classroomIntent);
 			}
 		}); // end of button
-		
+
 		final Button button121 = (Button) findViewById(R.id.hungarian_button);
 		button121.setOnClickListener(new View.OnClickListener() {
 			public void onClick(View v) {
@@ -86,7 +87,7 @@ public class CiddeBrowseRooms extends Activity {
 				startActivity(classroomIntent);
 			}
 		}); // end of button
-		
+
 		final Button button126 = (Button) findViewById(R.id.polish_button);
 		button126.setOnClickListener(new View.OnClickListener() {
 			public void onClick(View v) {
@@ -104,7 +105,7 @@ public class CiddeBrowseRooms extends Activity {
 				startActivity(classroomIntent);
 			}
 		}); // end of button
-		
+
 		final Button button127 = (Button) findViewById(R.id.irish_button);
 		button127.setOnClickListener(new View.OnClickListener() {
 			public void onClick(View v) {
@@ -122,7 +123,7 @@ public class CiddeBrowseRooms extends Activity {
 				startActivity(classroomIntent);
 			}
 		}); // end of button
-		
+
 		final Button button129 = (Button) findViewById(R.id.lith_button);
 		button129.setOnClickListener(new View.OnClickListener() {
 			public void onClick(View v) {
@@ -140,7 +141,7 @@ public class CiddeBrowseRooms extends Activity {
 				startActivity(classroomIntent);
 			}
 		}); // end of button
-		
+
 		final Button button130 = (Button) findViewById(R.id.romanian_button);
 		button130.setOnClickListener(new View.OnClickListener() {
 			public void onClick(View v) {
@@ -158,7 +159,7 @@ public class CiddeBrowseRooms extends Activity {
 				startActivity(classroomIntent);
 			}
 		}); // end of button
-		
+
 		final Button button135 = (Button) findViewById(R.id.swedish_button);
 		button135.setOnClickListener(new View.OnClickListener() {
 			public void onClick(View v) {
@@ -176,7 +177,7 @@ public class CiddeBrowseRooms extends Activity {
 				startActivity(classroomIntent);
 			}
 		}); // end of button
-		
+
 		final Button button136 = (Button) findViewById(R.id.chinese_button);
 		button136.setOnClickListener(new View.OnClickListener() {
 			public void onClick(View v) {
@@ -194,7 +195,7 @@ public class CiddeBrowseRooms extends Activity {
 				startActivity(classroomIntent);
 			}
 		}); // end of button
-		
+
 		final Button button137 = (Button) findViewById(R.id.greek_button);
 		button137.setOnClickListener(new View.OnClickListener() {
 			public void onClick(View v) {
@@ -212,7 +213,7 @@ public class CiddeBrowseRooms extends Activity {
 				startActivity(classroomIntent);
 			}
 		}); // end of button
-		
+
 		final Button button139 = (Button) findViewById(R.id.scottish_button);
 		button139.setOnClickListener(new View.OnClickListener() {
 			public void onClick(View v) {
@@ -248,7 +249,7 @@ public class CiddeBrowseRooms extends Activity {
 				startActivity(classroomIntent);
 			}
 		}); // end of button
-		
+
 		final Button button144 = (Button) findViewById(R.id.english_button);
 		button144.setOnClickListener(new View.OnClickListener() {
 			public void onClick(View v) {
@@ -266,7 +267,7 @@ public class CiddeBrowseRooms extends Activity {
 				startActivity(classroomIntent);
 			}
 		}); // end of button
-		
+
 		final Button button149 = (Button) findViewById(R.id.french_button);
 		button149.setOnClickListener(new View.OnClickListener() {
 			public void onClick(View v) {
@@ -284,7 +285,7 @@ public class CiddeBrowseRooms extends Activity {
 				startActivity(classroomIntent);
 			}
 		}); // end of button
-		
+
 		final Button button151 = (Button) findViewById(R.id.norwegian_button);
 		button151.setOnClickListener(new View.OnClickListener() {
 			public void onClick(View v) {
@@ -302,7 +303,7 @@ public class CiddeBrowseRooms extends Activity {
 				startActivity(classroomIntent);
 			}
 		}); // end of button
-		
+
 		final Button button153 = (Button) findViewById(R.id.russian_button);
 		button153.setOnClickListener(new View.OnClickListener() {
 			public void onClick(View v) {
@@ -320,7 +321,7 @@ public class CiddeBrowseRooms extends Activity {
 				startActivity(classroomIntent);
 			}
 		}); // end of button
-		
+
 		final Button button160 = (Button) findViewById(R.id.syria_button);
 		button160.setOnClickListener(new View.OnClickListener() {
 			public void onClick(View v) {
@@ -338,7 +339,7 @@ public class CiddeBrowseRooms extends Activity {
 				startActivity(classroomIntent);
 			}
 		}); // end of button
-		
+
 		final Button button314 = (Button) findViewById(R.id.austrian_button);
 		button314.setOnClickListener(new View.OnClickListener() {
 			public void onClick(View v) {
@@ -356,7 +357,7 @@ public class CiddeBrowseRooms extends Activity {
 				startActivity(classroomIntent);
 			}
 		}); // end of button
-		
+
 		final Button button317 = (Button) findViewById(R.id.jap_button);
 		button317.setOnClickListener(new View.OnClickListener() {
 			public void onClick(View v) {
@@ -374,7 +375,7 @@ public class CiddeBrowseRooms extends Activity {
 				startActivity(classroomIntent);
 			}
 		}); // end of button
-		
+
 		final Button button319 = (Button) findViewById(R.id.armenian_button);
 		button319.setOnClickListener(new View.OnClickListener() {
 			public void onClick(View v) {
@@ -392,7 +393,7 @@ public class CiddeBrowseRooms extends Activity {
 				startActivity(classroomIntent);
 			}
 		}); // end of button
-		
+
 		final Button button327 = (Button) findViewById(R.id.india_button);
 		button327.setOnClickListener(new View.OnClickListener() {
 			public void onClick(View v) {
@@ -410,7 +411,7 @@ public class CiddeBrowseRooms extends Activity {
 				startActivity(classroomIntent);
 			}
 		}); // end of button
-		
+
 		final Button button328 = (Button) findViewById(R.id.early_am_button);
 		button328.setOnClickListener(new View.OnClickListener() {
 			public void onClick(View v) {
@@ -428,7 +429,7 @@ public class CiddeBrowseRooms extends Activity {
 				startActivity(classroomIntent);
 			}
 		}); // end of button
-		
+
 		final Button button330 = (Button) findViewById(R.id.africa_button);
 		button330.setOnClickListener(new View.OnClickListener() {
 			public void onClick(View v) {
@@ -446,7 +447,7 @@ public class CiddeBrowseRooms extends Activity {
 				startActivity(classroomIntent);
 			}
 		}); // end of button
-		
+
 		final Button button337 = (Button) findViewById(R.id.israel_button);
 		button337.setOnClickListener(new View.OnClickListener() {
 			public void onClick(View v) {
@@ -464,7 +465,7 @@ public class CiddeBrowseRooms extends Activity {
 				startActivity(classroomIntent);
 			}
 		}); // end of button
-		
+
 		final Button button341 = (Button) findViewById(R.id.ukranian_button);
 		button341.setOnClickListener(new View.OnClickListener() {
 			public void onClick(View v) {
@@ -482,7 +483,7 @@ public class CiddeBrowseRooms extends Activity {
 				startActivity(classroomIntent);
 			}
 		}); // end of button
-		
+
 		final Button button342 = (Button) findViewById(R.id.welsh_button);
 		button342.setOnClickListener(new View.OnClickListener() {
 			public void onClick(View v) {
@@ -508,5 +509,14 @@ public class CiddeBrowseRooms extends Activity {
 		getMenuInflater().inflate(R.menu.activity_cidde_main, menu);
 		return true;
 	}// end onCreateOptionsMenu method
+
+	// when a button in the options menu is clicked
+	@Override
+	public boolean onOptionsItemSelected(MenuItem item) {
+		// main menu intent
+		Intent mainIntent = new Intent(this, CiddeMainActivity.class);
+		startActivity(mainIntent);
+		return true;
+	} // end of onOptionsItemSelected
 
 }// end DummyBrowseActivity class

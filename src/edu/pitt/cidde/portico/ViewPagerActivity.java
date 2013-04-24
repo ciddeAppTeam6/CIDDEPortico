@@ -120,40 +120,19 @@ public class ViewPagerActivity extends FragmentActivity {
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.activity_view_pager, menu);
+		getMenuInflater().inflate(R.menu.activity_cidde_main, menu);
 		// Log.i("DEBUG","onCreateOptionsMenu");
 		return true;
 	}
 
+	// when a button in the options menu is clicked
+	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
-		switch (item.getItemId()) {
-		case R.id.return_home: // return to HOME SCREEN
-			// msgFromChildReturnType = 2;
-			// RETURN TO THE MAIN VIEW after (after intent)
-
-			Bundle bundle = new Bundle();
-			bundle.putInt("intReturnAction", 2);
-			Log.d("DEBUG", "sending back... 2");
-			Intent mIntent = new Intent();
-			mIntent.putExtras(bundle);
-			setResult(RESULT_OK, mIntent);
-			finish();
-
-			return true;
-
-		case R.id.search_equipment: // search for equipment
-			// [ go search equipment here ]
-			return true;
-		case R.id.scan_qr_code: // scan QR code
-			// [ go scan qr code here ]
-			return true;
-		case R.id.app_help: // get help with app
-			// [ go view the help pages ]
-			return true;
-		default:
-			return super.onOptionsItemSelected(item);
-		} // switch()
-	} // onOptionsItemSelected()
+		// main menu intent
+		Intent mainIntent = new Intent(this, CiddeMainActivity.class);
+		startActivity(mainIntent);
+		return true;
+	} // end of onOptionsItemSelected
 
 	// ================================================================================
 	// PURPOSE: Return a fragment corresponding to one of the

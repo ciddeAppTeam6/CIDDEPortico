@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.app.Activity;
 import android.content.Intent;
 import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
@@ -70,7 +71,7 @@ public class ClassRoomInfoActivity extends Activity {
 			break;
 		case 149:
 			setContentView(R.layout.french_info);
-			break;			
+			break;
 		case 151:
 			setContentView(R.layout.norwegian_info);
 			break;
@@ -140,7 +141,7 @@ public class ClassRoomInfoActivity extends Activity {
 						.parse("http://www.pitt.edu/~natrooms/")));
 			} // end of listener method
 		}); // end of anon listener class
-		
+
 	} // end of on create
 
 	// Options Menu
@@ -150,5 +151,14 @@ public class ClassRoomInfoActivity extends Activity {
 		getMenuInflater().inflate(R.menu.activity_cidde_main, menu);
 		return true;
 	}
+
+	// when a button in the options menu is clicked
+	@Override
+	public boolean onOptionsItemSelected(MenuItem item) {
+		// main menu intent
+		Intent mainIntent = new Intent(this, CiddeMainActivity.class);
+		startActivity(mainIntent);
+		return true;
+	} // end of onOptionsItemSelected
 
 } // end of class (activity)

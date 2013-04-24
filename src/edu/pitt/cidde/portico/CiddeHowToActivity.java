@@ -4,6 +4,7 @@ import android.app.ListActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
@@ -88,5 +89,14 @@ public class CiddeHowToActivity extends ListActivity {
 				.inflate(R.menu.activity_cidde_main, menu);
 		return true;
 	}
+	
+	// when a button in the options menu is clicked
+	@Override
+	public boolean onOptionsItemSelected(MenuItem item) {
+		// main menu intent
+		Intent mainIntent = new Intent(this, CiddeMainActivity.class);
+		startActivity(mainIntent);
+		return true;
+	} // end of onOptionsItemSelected
 } // class CiddeHowToActivity
 

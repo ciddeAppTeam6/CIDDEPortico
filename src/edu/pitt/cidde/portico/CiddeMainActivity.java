@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.LinearLayout;
@@ -101,4 +102,13 @@ public class CiddeMainActivity extends Activity {
 		getMenuInflater().inflate(R.menu.activity_cidde_main, menu);
 		return true;
 	}
+	
+	// when a button in the options menu is clicked
+	@Override
+	public boolean onOptionsItemSelected(MenuItem item) {
+		// main menu intent
+		Intent mainIntent = new Intent(this, CiddeMainActivity.class);
+		startActivity(mainIntent);
+		return true;
+	} // end of onOptionsItemSelected
 }
