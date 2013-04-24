@@ -311,7 +311,7 @@ public class ViewPagerActivity extends FragmentActivity {
 				//How to set up Self-Service Printing (Mac)
 				else if (parentIntentViewType == 1257) 
 				{
-					whatPageCnt = 10;
+					whatPageCnt = 15;
 				}
 				
 				//How to determine bit version of Windows
@@ -504,6 +504,28 @@ public class ViewPagerActivity extends FragmentActivity {
 						return "Step 3";
 					case 3:
 						return "Step 4";
+					case 4:
+						return "Step 5";
+					case 5:
+						return "Step 6";
+					case 6:
+						return "Step 7";
+					case 7:
+						return "Step 8";
+					case 8:
+						return "Step 9";
+					case 9:
+						return "Step 10";
+					case 10:
+						return "Step 11";
+					case 11:
+						return "Step 12";
+					case 12:
+						return "Step 13";
+					case 13:
+						return "Step 14";
+					case 14:
+						return "Step 15";
 					}
 					return "Who Knows?"; // return null;
 				} 
@@ -1880,8 +1902,7 @@ public class ViewPagerActivity extends FragmentActivity {
 				llInner.addView(imgView);
 
 				textview = new TextView(getActivity());
-				textview.setText(Html.fromHtml("Open a Web browser to <u>https://my.pitt.edu/portal/server.pt/community/" +
-						"software_downloads/872</u> and log in using your University Computer Account username and " +
+				textview.setText(Html.fromHtml("Open a Web browser to <u>software.pitt.edu/</u> and log in using your University Computer Account username and " +
 						"password."));
 				textview.setLayoutParams(new LinearLayout.LayoutParams(
 						LayoutParams.MATCH_PARENT, LayoutParams.WRAP_CONTENT));
@@ -2099,7 +2120,7 @@ public class ViewPagerActivity extends FragmentActivity {
 			switch (getArguments().getInt(ARG_SECTION_NUMBER)) {
 			case 1:
 				imgView = new ImageView(getActivity());
-				imgView.setImageResource(R.drawable.airport_icon);
+				imgView.setImageResource(R.drawable.mypitt_login);
 				imgView.setLayoutParams(new LinearLayout.LayoutParams(
 						LayoutParams.MATCH_PARENT, (int) (0.7 * container
 								.getMeasuredWidth())));
@@ -2107,7 +2128,8 @@ public class ViewPagerActivity extends FragmentActivity {
 				llInner.addView(imgView);
 
 				textview = new TextView(getActivity());
-				textview.setText(Html.fromHtml("Click the <b>AirPort</b> status menu and select <b>SETUP-PITT-WIFI</b>."));
+				textview.setText(Html.fromHtml("Open a Web browser to <u>software.pitt.edu/</u> and log in using your University Computer Account username and " +
+						"password."));
 				textview.setLayoutParams(new LinearLayout.LayoutParams(
 						LayoutParams.MATCH_PARENT, LayoutParams.WRAP_CONTENT));
 				llInner.addView(textview);
@@ -2115,7 +2137,7 @@ public class ViewPagerActivity extends FragmentActivity {
 
 			case 2:
 				imgView = new ImageView(getActivity());
-				imgView.setImageResource(R.drawable.auto_network_config);
+				imgView.setImageResource(R.drawable.software_link);
 				imgView.setLayoutParams(new LinearLayout.LayoutParams(
 						LayoutParams.MATCH_PARENT, (int) (0.7 * container
 								.getMeasuredWidth())));
@@ -2123,11 +2145,7 @@ public class ViewPagerActivity extends FragmentActivity {
 				llInner.addView(imgView);
 
 				textview = new TextView(getActivity());
-				textview.setText(Html.fromHtml("An automated network configuration tool similar to that shown above will " +
-						"display. Review and accept the terms of the license agreement, then click <b>Start</b>. " +
-						"<br /><br /><b>Note:</b> If you are using Windows 8, you may be prompted to manually download the " +
-						"application and run it. <br /><br /><b>Note:</b> You need to open a web browser if you are using" +
-						"an OS version earlier than Mac OS X 10.7."));
+				textview.setText(Html.fromHtml("Click the <b>Software Download Service Login</b> link."));
 				textview.setLayoutParams(new LinearLayout.LayoutParams(
 						LayoutParams.MATCH_PARENT, LayoutParams.WRAP_CONTENT));
 				llInner.addView(textview);
@@ -2135,7 +2153,7 @@ public class ViewPagerActivity extends FragmentActivity {
 
 			case 3:
 				imgView = new ImageView(getActivity());
-				imgView.setImageResource(R.drawable.pittnet_login);
+				imgView.setImageResource(R.drawable.vendor);
 				imgView.setLayoutParams(new LinearLayout.LayoutParams(
 						LayoutParams.MATCH_PARENT, (int) (0.7 * container
 								.getMeasuredWidth())));
@@ -2143,17 +2161,34 @@ public class ViewPagerActivity extends FragmentActivity {
 				llInner.addView(imgView);
 
 				textview = new TextView(getActivity());
-				textview.setText(Html.fromHtml("Enter your University Computing Account username and password and " +
-						"click <b>Continue</b>. Then complete the installation wizard."));
+				textview.setText(Html.fromHtml("Select <b>University of Pittsburgh</b> from the <b>Choose Vendor</b> " +
+						"drop-down menu."));
+				textview.setLayoutParams(new LinearLayout.LayoutParams(
+						LayoutParams.MATCH_PARENT, LayoutParams.WRAP_CONTENT));
+				llInner.addView(textview);
+				break;
+
+			case 4:
+				imgView = new ImageView(getActivity());
+				imgView.setImageResource(R.drawable.self_print_download);
+				imgView.setLayoutParams(new LinearLayout.LayoutParams(
+						LayoutParams.MATCH_PARENT, (int) (0.7 * container
+								.getMeasuredWidth())));
+				// imgView.setScaleType(ImageView.ScaleType.CENTER_INSIDE);
+				llInner.addView(imgView);
+
+				textview = new TextView(getActivity());
+				textview.setText(Html.fromHtml("A list of matching results will display. Click the <b>Self-Service " +
+						"Printing</b> link for the Macintosh version of the download."));
 				textview.setLayoutParams(new LinearLayout.LayoutParams(
 						LayoutParams.MATCH_PARENT, LayoutParams.WRAP_CONTENT));
 				llInner.addView(textview);
 
 				break;
 				
-			case 4:
+			case 5:
 				imgView = new ImageView(getActivity());
-				imgView.setImageResource(R.drawable.pittnet_success);
+				imgView.setImageResource(R.drawable.download_all);
 				imgView.setLayoutParams(new LinearLayout.LayoutParams(
 						LayoutParams.MATCH_PARENT, (int) (0.7 * container
 								.getMeasuredWidth())));
@@ -2161,15 +2196,194 @@ public class ViewPagerActivity extends FragmentActivity {
 				llInner.addView(imgView);
 
 				textview = new TextView(getActivity());
-				textview.setText("A screen similar to the one above will display indicating that you are successfully " +
-						"connected to Wireless PittNet. The next time you connect, just select Wireless PittNet from " +
-						"the list of available networks.");
+				textview.setText(Html.fromHtml("Click the <b>Download all Files</b> button, then select a location to " +
+						"save the file to on your computer.<br /><br /><b>Note:</b> You may be prompted to install <b>" +
+						"Pitt Software Download Service Interface – Provided by Akamai</b> at this point. Download and " +
+						"install it to continue."));
 				textview.setLayoutParams(new LinearLayout.LayoutParams(
 						LayoutParams.MATCH_PARENT, LayoutParams.WRAP_CONTENT));
 				llInner.addView(textview);
 
 				break;
 
+			case 6:
+				imgView = new ImageView(getActivity());
+				imgView.setImageResource(R.drawable.download_icon_mac);
+				imgView.setLayoutParams(new LinearLayout.LayoutParams(
+						LayoutParams.MATCH_PARENT, (int) (0.7 * container
+								.getMeasuredWidth())));
+				// imgView.setScaleType(ImageView.ScaleType.CENTER_INSIDE);
+				llInner.addView(imgView);
+
+				textview = new TextView(getActivity());
+				textview.setText(Html.fromHtml("Once the software is downloaded, double-click to mount the image."));
+				textview.setLayoutParams(new LinearLayout.LayoutParams(
+						LayoutParams.MATCH_PARENT, LayoutParams.WRAP_CONTENT));
+				llInner.addView(textview);
+
+				break;
+				
+			case 7:
+				imgView = new ImageView(getActivity());
+				imgView.setImageResource(R.drawable.mount);
+				imgView.setLayoutParams(new LinearLayout.LayoutParams(
+						LayoutParams.MATCH_PARENT, (int) (0.7 * container
+								.getMeasuredWidth())));
+				// imgView.setScaleType(ImageView.ScaleType.CENTER_INSIDE);
+				llInner.addView(imgView);
+
+				textview = new TextView(getActivity());
+				textview.setText(Html.fromHtml("Double-click the mount on the desktop."));
+				textview.setLayoutParams(new LinearLayout.LayoutParams(
+						LayoutParams.MATCH_PARENT, LayoutParams.WRAP_CONTENT));
+				llInner.addView(textview);
+
+				break;
+				
+			case 8:
+				imgView = new ImageView(getActivity());
+				imgView.setImageResource(R.drawable.package_contents);
+				imgView.setLayoutParams(new LinearLayout.LayoutParams(
+						LayoutParams.MATCH_PARENT, (int) (0.7 * container
+								.getMeasuredWidth())));
+				// imgView.setScaleType(ImageView.ScaleType.CENTER_INSIDE);
+				llInner.addView(imgView);
+
+				textview = new TextView(getActivity());
+				textview.setText(Html.fromHtml("Right-click (or ctrl-click) the <b>Pitt-Self-Service-Printing.mpkg</b> " +
+						"and select <b>Show Package Contents</b>."));
+				textview.setLayoutParams(new LinearLayout.LayoutParams(
+						LayoutParams.MATCH_PARENT, LayoutParams.WRAP_CONTENT));
+				llInner.addView(textview);
+
+				break;
+				
+			case 9:
+				imgView = new ImageView(getActivity());
+				imgView.setImageResource(R.drawable.package_contents2);
+				imgView.setLayoutParams(new LinearLayout.LayoutParams(
+						LayoutParams.MATCH_PARENT, (int) (0.7 * container
+								.getMeasuredWidth())));
+				// imgView.setScaleType(ImageView.ScaleType.CENTER_INSIDE);
+				llInner.addView(imgView);
+
+				textview = new TextView(getActivity());
+				textview.setText(Html.fromHtml("Open the <b>Contents</b> folder, then open the <b>Packages</b> folder." +
+						"Right-click <b>xeroxPhaser5500Cd.pkg</b> and select <b>Show Package Contents</b>."));
+				textview.setLayoutParams(new LinearLayout.LayoutParams(
+						LayoutParams.MATCH_PARENT, LayoutParams.WRAP_CONTENT));
+				llInner.addView(textview);
+
+				break;
+				
+			case 10:
+				imgView = new ImageView(getActivity());
+				imgView.setImageResource(R.drawable.install_notify);
+				imgView.setLayoutParams(new LinearLayout.LayoutParams(
+						LayoutParams.MATCH_PARENT, (int) (0.7 * container
+								.getMeasuredWidth())));
+				// imgView.setScaleType(ImageView.ScaleType.CENTER_INSIDE);
+				llInner.addView(imgView);
+
+				textview = new TextView(getActivity());
+				textview.setText(Html.fromHtml("Open the <b>Contents</b> folder, then open the <b>Resources</b> folder." +
+						"Double-click to install <b>Notify.pkg</b>, follow the prompts to complete the installation."));
+				textview.setLayoutParams(new LinearLayout.LayoutParams(
+						LayoutParams.MATCH_PARENT, LayoutParams.WRAP_CONTENT));
+				llInner.addView(textview);
+
+				break;
+				
+			case 11:
+				imgView = new ImageView(getActivity());
+				imgView.setImageResource(R.drawable.install_popup);
+				imgView.setLayoutParams(new LinearLayout.LayoutParams(
+						LayoutParams.MATCH_PARENT, (int) (0.7 * container
+								.getMeasuredWidth())));
+				// imgView.setScaleType(ImageView.ScaleType.CENTER_INSIDE);
+				llInner.addView(imgView);
+
+				textview = new TextView(getActivity());
+				textview.setText(Html.fromHtml("Double-click to install <b>Popup.pkg</b>, follow the prompts to complete " +
+						"the installation."));
+				textview.setLayoutParams(new LinearLayout.LayoutParams(
+						LayoutParams.MATCH_PARENT, LayoutParams.WRAP_CONTENT));
+				llInner.addView(textview);
+
+				break;
+				
+			case 12:
+				imgView = new ImageView(getActivity());
+				imgView.setImageResource(R.drawable.install_xerox);
+				imgView.setLayoutParams(new LinearLayout.LayoutParams(
+						LayoutParams.MATCH_PARENT, (int) (0.7 * container
+								.getMeasuredWidth())));
+				// imgView.setScaleType(ImageView.ScaleType.CENTER_INSIDE);
+				llInner.addView(imgView);
+
+				textview = new TextView(getActivity());
+				textview.setText(Html.fromHtml("Double-click to install <b>Xerox Phaser 5500 CD.mpkg</b>, follow the prompts to complete " +
+						"the installation."));
+				textview.setLayoutParams(new LinearLayout.LayoutParams(
+						LayoutParams.MATCH_PARENT, LayoutParams.WRAP_CONTENT));
+				llInner.addView(textview);
+
+				break;
+				
+			case 13:
+				imgView = new ImageView(getActivity());
+				imgView.setImageResource(R.drawable.printer_search);
+				imgView.setLayoutParams(new LinearLayout.LayoutParams(
+						LayoutParams.MATCH_PARENT, (int) (0.7 * container
+								.getMeasuredWidth())));
+				// imgView.setScaleType(ImageView.ScaleType.CENTER_INSIDE);
+				llInner.addView(imgView);
+
+				textview = new TextView(getActivity());
+				textview.setText(Html.fromHtml("The last step will try to search for printers. Click <b>Continue</b>."));
+				textview.setLayoutParams(new LinearLayout.LayoutParams(
+						LayoutParams.MATCH_PARENT, LayoutParams.WRAP_CONTENT));
+				llInner.addView(textview);
+
+				break;
+				
+			case 14:
+				imgView = new ImageView(getActivity());
+				imgView.setImageResource(R.drawable.printer_queue);
+				imgView.setLayoutParams(new LinearLayout.LayoutParams(
+						LayoutParams.MATCH_PARENT, (int) (0.7 * container
+								.getMeasuredWidth())));
+				// imgView.setScaleType(ImageView.ScaleType.CENTER_INSIDE);
+				llInner.addView(imgView);
+
+				textview = new TextView(getActivity());
+				textview.setText(Html.fromHtml("You will receive an error, \"Print Queue Not Created\", click " +
+						"<b>Continue</b> and then <b>Close</b>."));
+				textview.setLayoutParams(new LinearLayout.LayoutParams(
+						LayoutParams.MATCH_PARENT, LayoutParams.WRAP_CONTENT));
+				llInner.addView(textview);
+
+				break;
+				
+			case 15:
+				imgView = new ImageView(getActivity());
+				imgView.setImageResource(R.drawable.mac_install);
+				imgView.setLayoutParams(new LinearLayout.LayoutParams(
+						LayoutParams.MATCH_PARENT, (int) (0.7 * container
+								.getMeasuredWidth())));
+				// imgView.setScaleType(ImageView.ScaleType.CENTER_INSIDE);
+				llInner.addView(imgView);
+
+				textview = new TextView(getActivity());
+				textview.setText(Html.fromHtml("Now you should go back to the main installation software, <b>Pitt-Self-" +
+						"Service-Printing.mpkg</b>, follow the prompts to complete the installation and then reboot your " +
+						"computer."));
+				textview.setLayoutParams(new LinearLayout.LayoutParams(
+						LayoutParams.MATCH_PARENT, LayoutParams.WRAP_CONTENT));
+				llInner.addView(textview);
+
+				break;
+				
 			default:
 				break;
 			}
@@ -2205,7 +2419,7 @@ public class ViewPagerActivity extends FragmentActivity {
 
 		} // onCreateView()
 
-	} // CLASS HowToSetUpSelfServicePrintingMacFrgmt
+	} // CLASS HowToSetUpSelfServicePrintingWindowsFrgmt
 
 	public static class HowToDetermineBitVersionOfWindowsFrgmt extends Fragment {
 		/**
